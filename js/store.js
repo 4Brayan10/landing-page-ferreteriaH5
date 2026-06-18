@@ -8,7 +8,7 @@ let products = [
     { id: 'PROD-001', name: 'Cemento Portland Yura 42.5kg', category: 'Material Grueso', price: 55.00, stock: 150, img: 'assets/img/Cemento_yura.jpg' },
     { id: 'PROD-002', name: 'Fierro Corrugado 12mm x 12m', category: 'Fierros y Aceros', price: 62.50, stock: 320, img: 'assets/img/fierro.jpg' },
     { id: 'PROD-003', name: 'Pintura Látex Monopol Blanco 18L', category: 'Pinturas', price: 180.00, stock: 5, img: 'assets/img/Latex18.jpg' },
-    { id: 'PROD-004', name: 'Ladrillo 6 Huecos', category: 'Material Grueso', price: 1.20, stock: 0, img: 'assets/img/Ladrillo.jpg' },
+    { id: 'PROD-004', name: 'Ladrillo 6 Huecos', category: 'Material Grueso', price: 1.20, stock: 0, img: 'assets/img/ladrillo.jpg' },
     { id: 'PROD-005', name: 'Clavos Calamina 2 1/2"', category: 'Ferretería', price: 15.00, stock: 45, img: 'assets/img/clavodec.webp' },
     { id: 'PROD-006', name: 'Tubo PVC 4" x 3m', category: 'Plomería', price: 25.50, stock: 80, img: 'assets/img/tubo4.jpg' },
     { id: 'PROD-007', name: 'Cable AWG 12 THHN', category: 'Electricidad', price: 210.00, stock: 25, img: 'assets/img/cable.jpg' },
