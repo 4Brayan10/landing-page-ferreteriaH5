@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca del Desarrollador | Ferretería Belén</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/store.css">
+    <style>
+        body { background: #f4f7f6; font-family: 'Inter', sans-serif; }
+        
+        .creator-wrapper {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 5%;
+        }
+
+        .creator-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            text-align: center;
+            position: relative;
+        }
+
+        .creator-cover {
+            height: 200px;
+            background: linear-gradient(135deg, #1565C0 0%, #3498db 100%);
+            position: relative;
+        }
+
+        .creator-avatar {
+            width: 150px;
+            height: 150px;
+            background: white;
+            border: 5px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4.5rem;
+            color: #1565C0;
+            position: absolute;
+            bottom: -75px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .creator-body {
+            padding: 90px 3rem 3rem;
+        }
+
+        .creator-name {
+            font-size: 2.2rem;
+            color: #1a202c;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .creator-role {
+            font-size: 1.1rem;
+            color: #3498db;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+
+        .creator-desc {
+            color: #4a5568;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+            padding: 0 1rem;
+        }
+
+        .creator-skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .skill-badge {
+            background: #f0f4f8;
+            color: #2c3e50;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+        .skill-badge:hover { background: #1565C0; color: white; border-color: #1565C0; transform: translateY(-3px);}
+
+        .creator-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding-top: 2rem;
+            border-top: 1px solid #edf2f7;
+            margin-bottom: 2rem;
+        }
+
+        .stat-item { text-align: center; }
+        .stat-val { font-size: 1.8rem; font-weight: 800; color: #1a202c; margin-bottom: 0.2rem;}
+        .stat-label { font-size: 0.85rem; color: #718096; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;}
+
+        .creator-social {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .creator-social a {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #f0f4f8;
+            color: #4a5568;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .creator-social a:hover {
+            background: #1565C0;
+            color: white;
+            transform: translateY(-5px) rotate(8deg);
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: #1a202c;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .btn-back:hover { background: #2d3748; transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.1);}
+
+        @media (max-width: 600px) {
+            .creator-body { padding: 90px 1.5rem 2rem; }
+            .creator-stats { grid-template-columns: 1fr; gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <a href="../index.html" class="logo"><i class="fas fa-tools"></i> Ferretería<span>Belén</span></a>
+        <div class="search-bar-container">
+            <select><option>Todas las categorías</option></select>
+            <input type="text" placeholder="¿Qué estás buscando?">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-actions">
+            <a href="../modulos/Documento.html" class="action-btn"><i class="fas fa-book"></i> Manual</a>
+            <a href="login.html" class="action-btn"><i class="fas fa-user-circle"></i> Mi Cuenta</a>
+            <a href="carrito.html" class="action-btn"><i class="fas fa-shopping-cart"></i> Carrito</a>
+        </div>
+    </div>
+    <div class="header-nav">
+        <a href="../modulos/ofertas.html"><i class="fas fa-tags"></i> Ofertas</a>
+        <a href="../modulos/lo-nuevo.html"><i class="fas fa-star"></i> Lo Nuevo</a>
+        <a href="../modulos/material-grueso.html">Fierros y Aceros</a>
+        <a href="../modulos/pinturas.html">Pinturas</a>
+        <a href="../modulos/herramientas.html">Herramientas</a>
+        <a href="../modulos/plomeria.html">Plomería</a>
+        <a href="../modulos/electricidad.html">Electricidad</a>
+    </div>
+</header>
+
+<div class="creator-wrapper">
+    <div class="creator-card">
+        <div class="creator-cover">
+            <div class="creator-avatar"><i class="fas fa-user-graduate"></i></div>
+        </div>
+        <div class="creator-body">
+            <h1 class="creator-name">Brayan Copajaña Canaviri</h1>
+            <div class="creator-role">Estudiante | Ingeniería de Sistemas</div>
+            
+            <p class="creator-desc">
+                Este sistema de comercio electrónico para la Ferretería Belén fue diseñado y desarrollado por mí como parte de un proyecto de la carrera de Ingeniería de Sistemas (5to Semestre). El proyecto demuestra mis habilidades en diseño frontend, experiencia de usuario (UX) e interfaces web interactivas y escalables.
+            </p>
+
+            <div class="creator-skills">
+                <div class="skill-badge"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3 Moderno</div>
+                <div class="skill-badge"><i class="fab fa-js-square"></i> JavaScript</div>
+                <div class="skill-badge"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+                <div class="skill-badge"><i class="fas fa-paint-brush"></i> UI/UX</div>
+            </div>
+
+            <div class="creator-stats">
+                <div class="stat-item">
+                    <div class="stat-val"><i class="fas fa-code"></i></div>
+                    <div class="stat-label">Desarrollo Web</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-val">v4.0</div>
+                    <div class="stat-label">Versión del Sistema</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-val"><i class="fas fa-university"></i></div>
+                    <div class="stat-label">Proyecto Universitario</div>
+                </div>
+            </div>
+
+            <div class="creator-social">
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="Portafolio"><i class="fas fa-globe"></i></a>
+                <a href="#" title="Contacto"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <a href="../index.html" class="btn-back"><i class="fas fa-store"></i> Volver a la Tienda</a>
+        </div>
+    </div>
+</div>
+
+<footer class="main-footer" style="margin-top: 5rem;">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>¿Necesitas ayuda?</h4>
+            <ul>
+                <li><a href="#">Atención al cliente</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="../index.html#catalogo">Catálogo de Productos</a></li>
+                <li><a href="#" onclick="openModal('modalCotizacion')">Cotiza tu pedido</a></li>
+                <li><a href="#">Políticas de Devolución</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="#">Entrega a domicilio</a></li>
+                <li><a href="#">Asesoramiento técnico</a></li>
+                <li><a href="#">Ventas Corporativas / Por mayor</a></li>
+                <li><a href="#" onclick="openModal('modalCliente')">Portal Cliente Frecuente</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Somos Ferretería Belén</h4>
+            <ul>
+                <li><a href="#" onclick="openModal('modalTrabajo')">Trabaja con nosotros</a></li>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Nuestras Sucursales</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Ferretería Belén - Ingeniería de Sistemas | <a href="../index.html">Volver al inicio</a></p>
+    </div>
+</footer>
+
+<!-- MODALES SIMULADOS -->
+<div class="modal-overlay" id="modalCotizacion">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-file-invoice-dollar"></i> Cotizar Pedido</h3>
+            <button class="modal-close" onclick="closeModal('modalCotizacion')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <form onsubmit="handleDemoSubmit(event, 'cotizacionSuccess')">
+                <div class="form-group">
+                    <label>Nombre y Apellidos (Nombre_cli / Apellidos_cli)</label>
+                    <input type="text" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label>Número de Contacto (Num_contacto_cli)</label>
+                    <input type="number" placeholder="Ej. 70012345" required>
+                </div>
+                <div class="form-group">
+                    <label>Productos y Cantidad (Nombre_prod / Cant_prod)</label>
+                    <textarea rows="3" placeholder="Describe los materiales y cantidades" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Generar Cotización</button>
+                <div id="cotizacionSuccess" class="success-msg"><i class="fas fa-check-circle"></i> ¡Cotización guardada! Contactaremos al cliente pronto.</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modalCliente">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-id-card"></i> Portal Cliente Frecuente</h3>
+            <button class="modal-close" onclick="closeModal('modalCliente')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <form onsubmit="handleDemoSubmit(event, 'clienteSuccess')">
+                <div class="form-group">
+                    <label>Cédula de Identidad (CI_cli)</label>
+                    <input type="number" placeholder="Ej. 1234567" required>
+                </div>
+                <button type="submit" class="btn-submit" style="background: #1565C0;">Consultar Beneficios</button>
+                <div id="clienteSuccess" class="success-msg" style="color: #1565C0; background: #e3f2fd;">
+                    <i class="fas fa-star" style="color: #f39c12;"></i> ¡Hola! Tienes <strong>450 Puntos</strong> acumulados. Tienes un 15% de descuento disponible.
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modalTrabajo">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-briefcase"></i> Postula a Ferretería Belén</h3>
+            <button class="modal-close" onclick="closeModal('modalTrabajo')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+            <form onsubmit="handleDemoSubmit(event, 'trabajoSuccess')">
+                <div class="form-group">
+                    <label>Cédula de Identidad (CI_emp)</label>
+                    <input type="number" placeholder="Ej. 1234567" required>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Nombres (Nombre_emp)</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ap. Paterno (Paterno_emp)</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ap. Materno (Materno_emp)</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Cargo a Postular (Cargo_emp)</label>
+                    <select required>
+                        <option value="">Selecciona un área</option>
+                        <option value="Ventas">Ventas</option>
+                        <option value="Almacen">Almacén</option>
+                        <option value="Administracion">Administración</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Teléfono (Num_contacto_emp)</label>
+                        <input type="number" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Correo (Correo_electronico_emp)</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Adjuntar Currículum (PDF)</label>
+                    <input type="file" accept=".pdf" required>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Postulación</button>
+                <div id="trabajoSuccess" class="success-msg"><i class="fas fa-check-circle"></i> ¡Postulación enviada a Recursos Humanos!</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal(id) { document.getElementById(id).classList.add('active'); }
+    function closeModal(id) {
+        document.getElementById(id).classList.remove('active');
+        var form = document.querySelector('#'+id+' form');
+        if(form) form.reset();
+        var successMsg = document.querySelector('#'+id+' .success-msg');
+        if(successMsg) successMsg.style.display = 'none';
+    }
+    function handleDemoSubmit(event, successMsgId) {
+        event.preventDefault();
+        var successEl = document.getElementById(successMsgId);
+        if(successEl) successEl.style.display = 'block';
+    }
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal-overlay')) { event.target.classList.remove('active'); }
+    }
+</script>
+
+</body>
+</html>

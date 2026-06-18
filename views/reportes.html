@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ferretería Belén - Reportes</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Ibm+Plex+Sans:wght@100..700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1e",
+                        "secondary-fixed": "#ffdbca",
+                        "tertiary-container": "#314156",
+                        "surface-container-high": "#e6e8ea",
+                        "on-primary-fixed": "#00164e",
+                        "surface-variant": "#e0e3e5",
+                        "inverse-primary": "#b6c4ff",
+                        "surface-dim": "#d8dadc",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#dce1ff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#783200",
+                        "on-primary-container": "#90a8ff",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-low": "#f2f4f6",
+                        "background": "#f7f9fb",
+                        "on-surface-variant": "#444651",
+                        "primary": "#00236f",
+                        "tertiary": "#1b2b3f",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "surface-tint": "#4059aa",
+                        "secondary": "#9d4300",
+                        "on-secondary-fixed": "#341100",
+                        "on-tertiary-container": "#9dadc6",
+                        "on-primary-fixed-variant": "#264191",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "secondary-container": "#fd761a",
+                        "tertiary-fixed": "#d3e4fe",
+                        "inverse-surface": "#2d3133",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "outline": "#757682",
+                        "primary-container": "#1e3a8a",
+                        "outline-variant": "#c5c5d3",
+                        "surface": "#f7f9fb",
+                        "surface-container": "#eceef0",
+                        "on-tertiary-fixed": "#0b1c30",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#ffb690",
+                        "on-secondary-container": "#5c2400",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "display": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Ibm Plex Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .font-label { font-family: 'Ibm Plex Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<nav class="bg-primary-container dark:bg-primary-container border-b border-outline-variant dark:border-outline shadow-sm flex justify-between items-center w-full px-6 py-3 max-w-full mx-auto fixed top-0 z-50">
+<div class="flex items-center gap-8">
+<span class="text-xl font-black tracking-tight text-white dark:text-primary-fixed">Ferretería Belén</span>
+<div class="hidden md:flex items-center gap-6 font-headline text-body-md">
+<a class="text-surface-variant hover:text-white transition-colors duration-200 transition-all duration-200 active:scale-95" href="../index.html">Inicio</a>
+<a class="text-surface-variant hover:text-white transition-colors duration-200 transition-all duration-200 active:scale-95" href="dashboard.html">Gestión de Productos</a>
+<a class="text-surface-variant hover:text-white transition-colors duration-200 transition-all duration-200 active:scale-95" href="ventas.html">Registro de Ventas</a>
+<a class="text-surface-variant hover:text-white transition-colors duration-200 transition-all duration-200 active:scale-95" href="compras.html">Registro de Compras</a>
+<a class="text-surface-variant hover:text-white transition-colors duration-200 transition-all duration-200 active:scale-95" href="consulta.html">Consulta de Productos</a>
+<a class="text-white border-b-2 border-secondary-container pb-1 font-bold transition-all duration-200 active:scale-95" href="reportes.html">Reportes</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-primary/10 transition-all duration-200 active:scale-95 text-white">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+<a href="login.html" class="p-2 rounded-full hover:bg-primary/10 transition-all duration-200 active:scale-95 text-white">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+</a>
+</div>
+</nav>
+<main class="pt-24 pb-12 px-6 mx-auto max-w-6xl">
+<header class="mb-8 text-center">
+<h1 class="text-4xl font-black tracking-tighter text-primary uppercase text-center">Reportes</h1>
+<p class="text-on-surface-variant font-label mt-2 mx-auto">Módulo de análisis estratégico y visualización de datos de inventario y finanzas.</p>
+</header>
+<section class="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-8">
+<div class="lg:col-span-1">
+<div class="bg-surface-container-lowest p-6 border border-outline-variant shadow-sm rounded-lg flex flex-col gap-6">
+<h2 class="text-sm font-bold text-primary uppercase tracking-widest">Configuración de Reporte</h2>
+<div class="space-y-4">
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold font-label text-on-surface-variant uppercase" for="tipo_reporte">Tipo de Reporte</label>
+<select class="w-full p-3 bg-surface border border-outline-variant focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 rounded-lg transition-all outline-none" id="tipo_reporte">
+<option>Inventario</option>
+<option selected="">Ventas</option>
+<option>Compras</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold font-label text-on-surface-variant uppercase" for="fecha_inicio">Fecha Inicio</label>
+<input class="w-full p-3 bg-surface border border-outline-variant focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 rounded-lg transition-all outline-none" id="fecha_inicio" type="date"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold font-label text-on-surface-variant uppercase" for="fecha_fin">Fecha Fin</label>
+<input class="w-full p-3 bg-surface border border-outline-variant focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 rounded-lg transition-all outline-none" id="fecha_fin" type="date"/>
+</div>
+</div>
+<button class="w-full bg-secondary-container hover:bg-secondary text-white font-bold py-4 rounded-lg shadow-md hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+                        GENERAR REPORTE
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-3 space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-surface-container-lowest p-5 border border-outline-variant rounded-lg">
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-bold text-on-surface-variant uppercase">Ventas Totales</span>
+<span class="material-symbols-outlined text-secondary-container" data-icon="trending_up">trending_up</span>
+</div>
+<div class="text-2xl font-black text-primary">$45,280.00</div>
+</div>
+<div class="bg-surface-container-lowest p-5 border border-outline-variant rounded-lg">
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-bold text-on-surface-variant uppercase">Ganancia Bruta</span>
+<span class="material-symbols-outlined text-primary" data-icon="payments">payments</span>
+</div>
+<div class="text-2xl font-black text-primary">$12,450.00</div>
+</div>
+<div class="bg-surface-container-lowest p-5 border border-outline-variant rounded-lg">
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-bold text-on-surface-variant uppercase">Productos Movidos</span>
+<span class="material-symbols-outlined text-primary" data-icon="inventory_2">inventory_2</span>
+</div>
+<div class="text-2xl font-black text-primary">1,240 ud.</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden shadow-sm">
+<div class="bg-surface-container p-4 border-b border-outline-variant flex justify-between items-center">
+<h2 class="text-sm font-bold text-primary uppercase tracking-widest">REPORTE GENERADO</h2>
+<div class="flex gap-2">
+<button class="p-2 text-on-surface-variant hover:bg-surface-variant rounded transition-all">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-variant rounded transition-all">
+<span class="material-symbols-outlined" data-icon="print">print</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant">
+<th class="px-6 py-4 text-xs font-black text-on-surface-variant uppercase">Producto</th>
+<th class="px-6 py-4 text-xs font-black text-on-surface-variant uppercase">Stock Actual</th>
+<th class="px-6 py-4 text-xs font-black text-on-surface-variant uppercase">Ventas (Cant.)</th>
+<th class="px-6 py-4 text-xs font-black text-on-surface-variant uppercase text-right">Ganancia</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-bold text-primary">Cemento Portland (50kg)</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">150</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">85</td>
+<td class="px-6 py-4 text-right font-black text-on-surface">$1,700.00</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-bold text-primary">Varilla Corrugada 1/2"</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">420</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">210</td>
+<td class="px-6 py-4 text-right font-black text-on-surface">$3,150.00</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-bold text-primary">Pintura Látex Blanca 4L</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">45</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">12</td>
+<td class="px-6 py-4 text-right font-black text-on-surface">$480.00</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-bold text-primary">Taladro Percutor 800W</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">12</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">5</td>
+<td class="px-6 py-4 text-right font-black text-on-surface">$750.00</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4 font-bold text-primary">Juego de Destornilladores (10 pz)</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">88</td>
+<td class="px-6 py-4 text-on-surface-variant font-label">34</td>
+<td class="px-6 py-4 text-right font-black text-on-surface">$510.00</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="bg-primary text-white font-bold">
+<td class="px-6 py-4 uppercase tracking-wider">Totales de Selección</td>
+<td class="px-6 py-4 font-label">715</td>
+<td class="px-6 py-4 font-label">346</td>
+<td class="px-6 py-4 text-right font-black">$6,590.00</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest p-6 border border-outline-variant rounded-lg">
+<h3 class="text-xs font-bold text-primary uppercase mb-4 tracking-widest">Distribución de Ventas</h3>
+<div class="h-48 flex items-end justify-between gap-2 px-2">
+<div class="w-1/4 bg-primary-container/80 rounded-t-sm" style="height: 60%"></div>
+<div class="w-1/4 bg-secondary-container rounded-t-sm" style="height: 90%"></div>
+<div class="w-1/4 bg-primary-container/80 rounded-t-sm" style="height: 40%"></div>
+<div class="w-1/4 bg-primary-container/80 rounded-t-sm" style="height: 75%"></div>
+</div>
+<div class="flex justify-between mt-2 text-[10px] font-bold text-on-surface-variant uppercase">
+<span>Sem 1</span>
+<span>Sem 2</span>
+<span>Sem 3</span>
+<span>Sem 4</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-lg group">
+<img alt="Almacén de ferretería" class="w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:opacity-40 transition-all duration-500" data-alt="A professional, high-angle interior view of a modern hardware store warehouse showing organized steel shelves filled with construction materials like cement bags and metal pipes. The lighting is bright and industrial, emphasizing efficiency and logistical precision. The color palette features cool steel grays and deep blues, creating a mood of reliability and structural integrity in a corporate hardware retail environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-a9XnkLfN2GKt97JeKWZPrymtuKSPGDUEhhtJR1vLRK_1Nopjiex7dR1Xj8-_kgKiZwDpyfzPTr3zUBdxjg1N7qMhqaR1WK8MAR2sgIt_S4OAUeazGvKghm9Erk4UtLI-Bh9gAHDrlbLjOpSjQY4_RyhkqovsjOrwolQ4NrV_jGe_paaqWci_6WkanxjX332LG6rru1jNSoevm4Sx5kMywnbEtQQVt3VLDO-slRVxEBkAFK9NeGsTxx7_oMdUjul_BATCzbWBvs8"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-primary/10">
+<h4 class="text-primary font-black text-lg uppercase mb-2">Resumen Logístico</h4>
+<p class="text-on-surface text-sm max-w-xs">Optimice su stock basándose en las tendencias de ventas de los últimos 30 días.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-low border-t border-outline-variant py-8 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-primary font-black tracking-tight text-lg">Ferretería Belén</div>
+<div class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Sistema de Gestión de Almacén v2.4.0</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline" data-icon="help">help</span>
+<span class="material-symbols-outlined text-outline" data-icon="settings">settings</span>
+</div>
+</div>
+</footer>
+</body></html>

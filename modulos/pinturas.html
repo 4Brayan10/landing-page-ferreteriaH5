@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinturas | Ferretería Belén</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/store.css">
+    <style>
+        .cat-product-card { background: white; border-radius: 12px; padding: 1.5rem; border: 1px solid #eee; transition: 0.3s; text-align: center; position: relative; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .cat-product-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--accent, #9b59b6); }
+        .cat-product-card:hover { transform: translateY(-6px); border-color: #9b59b6; box-shadow: 0 12px 25px rgba(155,89,182,0.12); }
+        .cat-product-card img { width: 100%; height: 160px; object-fit: contain; margin-bottom: 1rem; }
+        .cat-prod-icon { font-size: 3.5rem; margin-bottom: 1rem; }
+        .cat-prod-brand { font-size: 0.8rem; color: #9b59b6; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .cat-prod-name { font-size: 1rem; font-weight: 700; color: #2c3e50; margin: 0.3rem 0; min-height: 40px; }
+        .cat-prod-desc { font-size: 0.82rem; color: #7f8c8d; margin-bottom: 0.5rem; min-height: 30px; }
+        .cat-prod-price { font-size: 1.4rem; font-weight: 800; color: #e74c3c; margin: 0.5rem 0 1rem; }
+        .btn-buy-card { background: #9b59b6; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; cursor: pointer; font-weight: 700; width: 100%; transition: 0.3s; font-size: 0.95rem; font-family: 'Inter', sans-serif; }
+        .btn-buy-card:hover { background: #8e44ad; }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <a href="../index.html" class="logo"><i class="fas fa-tools"></i> Ferretería<span>Belén</span></a>
+        <div class="search-bar-container">
+            <select><option>Todas las categorías</option></select>
+            <input type="text" placeholder="¿Qué estás buscando?">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-actions">
+            <a href="Documento.html" class="action-btn"><i class="fas fa-book"></i> Manual</a>
+            <a href="../views/login.html" class="action-btn"><i class="fas fa-user-circle"></i> Mi Cuenta</a>
+            <a href="../views/carrito.html" class="action-btn"><i class="fas fa-shopping-cart"></i> Carrito</a>
+            <a href="../views/creador.html" class="action-btn"><i class="fas fa-code"></i> Creador</a>
+        </div>
+    </div>
+    <div class="header-nav">
+        <a href="ofertas.html"><i class="fas fa-tags"></i> Ofertas</a>
+        <a href="lo-nuevo.html"><i class="fas fa-star"></i> Lo Nuevo</a>
+        
+        <a href="material-grueso.html">Fierros y Aceros</a>
+        <a href="pinturas.html">Pinturas</a>
+        <a href="herramientas.html">Herramientas</a>
+        <a href="plomeria.html">Plomería</a>
+        <a href="electricidad.html">Electricidad</a>
+        <a href="pinturas.html">Acabados</a>
+    </div>
+</header>
+
+<div class="page-hero" style="background: linear-gradient(135deg, #fdf4ff, #fff);">
+    <div style="max-width: 1300px; margin: 0 auto;">
+        <a href="../index.html" class="back-btn" style="color:#9b59b6; border-color:rgba(155,89,182,0.3);"><i class="fas fa-arrow-left"></i> Volver a la tienda</a>
+        <h1><i class="fas fa-paint-roller" style="color:#9b59b6;"></i> Pinturas</h1>
+        <p>Pinturas látex, esmaltes, anticorrosivos, barnices y accesorios de pintura.</p>
+    </div>
+</div>
+
+<section class="products-section">
+    <div style="max-width: 1300px; margin: 0 auto;">
+        <div class="products-grid">
+            <div class="cat-product-card" style="--accent:#ecf0f1;">
+                <img src="../assets/img/Latex18.jpg" alt="Pintura latex">
+                <div class="cat-prod-brand">MONOPOL</div>
+                <div class="cat-prod-name">Pintura Látex Interior Blanco 18L</div>
+                <div class="cat-prod-desc">Alta cubrición, secado rápido, lavable.</div>
+                <div class="cat-prod-price">Bs. 180.00</div>
+                <button class="btn-buy-card"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+            <div class="cat-product-card" style="--accent:#e74c3c;">
+                <img src="../assets/img/sintetico1.jpg" alt="pintura sintetica">
+                <div class="cat-prod-brand">MONOPOL</div>
+                <div class="cat-prod-name">Pintura Sintética 1GL Colores Tradicionales</div>
+                <div class="cat-prod-desc">Para metal y madera.</div>
+                <div class="cat-prod-price">Bs. 35.00</div>
+                <button class="btn-buy-card" style="background:#e74c3c;"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+            <div class="cat-product-card" style="--accent:#e67e22;">
+                <img src="../assets/img/monopola.jpg" alt="anticorrosivo">
+                <div class="cat-prod-brand">MONOPOL</div>
+                <div class="cat-prod-name">Pintura Anticorrosiva 1/4 gl Colores Tradicionales</div>
+                <div class="cat-prod-desc">Protección contra el óxido.</div>
+                <div class="cat-prod-price">Bs. 42.00</div>
+                <button class="btn-buy-card" style="background:#e67e22;"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+            <div class="cat-product-card" style="--accent:#f39c12;">
+                <img src="../assets/img/barniz.jpg" alt="barniz">
+                <div class="cat-prod-brand">LANCO</div>
+                <div class="cat-prod-name">Barniz para Madera Nogal 1L</div>
+                <div class="cat-prod-desc">Acabado brillante y duradero para interiores.</div>
+                <div class="cat-prod-price">Bs. 55.00</div>
+                <button class="btn-buy-card" style="background:#f39c12;"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+            <div class="cat-product-card" style="--accent:#3498db;">
+                <img src="../assets/img/azul.jpg" alt="estraitpaint">
+                <div class="cat-prod-brand">RUST-OLEUM</div>
+                <div class="cat-prod-name">Pintura en Spray Azul 400ml</div>
+                <div class="cat-prod-desc">Secado rápido. Para metal, madera y plástico.</div>
+                <div class="cat-prod-price">Bs. 28.00</div>
+                <button class="btn-buy-card" style="background:#3498db;"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+            <div class="cat-product-card" style="--accent:#9b59b6;">
+                <img src="../assets/img/rodillo.webp" alt="estraitpaint">
+                <div class="cat-prod-brand">ACCESORIOS</div>
+                <div class="cat-prod-name">Rodillo Pelo Corto 23cm + Bandeja</div>
+                <div class="cat-prod-desc">Set completo para pintado perfecto.</div>
+                <div class="cat-prod-price">Bs. 22.00</div>
+                <button class="btn-buy-card"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>¿Necesitas ayuda?</h4>
+            <ul>
+                <li><a href="#">Atención al cliente</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="../index.html#catalogo">Catálogo de Productos</a></li>
+                <li><a href="#" onclick="openModal('modalCotizacion')">Cotiza tu pedido</a></li>
+                <li><a href="#">Políticas de Devolución</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="#">Entrega a domicilio</a></li>
+                <li><a href="#">Asesoramiento técnico</a></li>
+                <li><a href="#">Ventas Corporativas / Por mayor</a></li>
+                <li><a href="#" onclick="openModal('modalCliente')">Portal Cliente Frecuente</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Somos Ferretería Belén</h4>
+            <ul>
+                <li><a href="#" onclick="openModal('modalTrabajo')">Trabaja con nosotros</a></li>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Nuestras Sucursales</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Ferretería Belén - Ingeniería de Sistemas | <a href="../index.html">Volver al inicio</a></p>
+    </div>
+</footer>
+
+<!-- MODALES SIMULADOS -->
+<!-- 1. Cotiza tu pedido -->
+<div class="modal-overlay" id="modalCotizacion">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-file-invoice-dollar"></i> Cotizar Pedido</h3>
+            <button class="modal-close" onclick="closeModal('modalCotizacion')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <form onsubmit="handleDemoSubmit(event, 'cotizacionSuccess')">
+                <div class="form-group">
+                    <label>Nombre y Apellidos (Nombre_cli / Apellidos_cli)</label>
+                    <input type="text" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label>Número de Contacto (Num_contacto_cli)</label>
+                    <input type="number" placeholder="Ej. 70012345" required>
+                </div>
+                <div class="form-group">
+                    <label>Productos y Cantidad (Nombre_prod / Cant_prod)</label>
+                    <textarea rows="3" placeholder="Describe los materiales y cantidades" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Generar Cotización</button>
+                <div id="cotizacionSuccess" class="success-msg"><i class="fas fa-check-circle"></i> ¡Cotización guardada! Contactaremos al cliente pronto.</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 2. Cliente Frecuente -->
+<div class="modal-overlay" id="modalCliente">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-id-card"></i> Portal Cliente Frecuente</h3>
+            <button class="modal-close" onclick="closeModal('modalCliente')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <form onsubmit="handleDemoSubmit(event, 'clienteSuccess')">
+                <div class="form-group">
+                    <label>Cédula de Identidad (CI_cli)</label>
+                    <input type="number" placeholder="Ej. 1234567" required>
+                </div>
+                <button type="submit" class="btn-submit" style="background: #1565C0;">Consultar Beneficios</button>
+                <div id="clienteSuccess" class="success-msg" style="color: #1565C0; background: #e3f2fd;">
+                    <i class="fas fa-star" style="color: #f39c12;"></i> ¡Hola! Tienes <strong>450 Puntos</strong> acumulados. Tienes un 15% de descuento disponible.
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 4. Trabaja con nosotros -->
+<div class="modal-overlay" id="modalTrabajo">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-briefcase"></i> Postula a Ferretería Belén</h3>
+            <button class="modal-close" onclick="closeModal('modalTrabajo')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+            <form onsubmit="handleDemoSubmit(event, 'trabajoSuccess')">
+                <div class="form-group">
+                    <label>Cédula de Identidad (CI_emp)</label>
+                    <input type="number" placeholder="Ej. 1234567" required>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Nombres (Nombre_emp)</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ap. Paterno (Paterno_emp)</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ap. Materno (Materno_emp)</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Cargo a Postular (Cargo_emp)</label>
+                    <select required>
+                        <option value="">Selecciona un área</option>
+                        <option value="Ventas">Ventas</option>
+                        <option value="Almacen">Almacén</option>
+                        <option value="Administracion">Administración</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Teléfono (Num_contacto_emp)</label>
+                        <input type="number" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Correo (Correo_electronico_emp)</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Adjuntar Currículum (PDF)</label>
+                    <input type="file" accept=".pdf" required>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Postulación</button>
+                <div id="trabajoSuccess" class="success-msg"><i class="fas fa-check-circle"></i> ¡Postulación enviada a Recursos Humanos!</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal(id) { document.getElementById(id).classList.add('active'); }
+    function closeModal(id) {
+        document.getElementById(id).classList.remove('active');
+        var form = document.querySelector('#'+id+' form');
+        if(form) form.reset();
+        var successMsg = document.querySelector('#'+id+' .success-msg');
+        if(successMsg) successMsg.style.display = 'none';
+    }
+    function handleDemoSubmit(event, successMsgId) {
+        event.preventDefault();
+        var successEl = document.getElementById(successMsgId);
+        if(successEl) successEl.style.display = 'block';
+    }
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal-overlay')) { event.target.classList.remove('active'); }
+    }
+</script>
+<script>
+    document.querySelectorAll('.btn-buy-card').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.cat-product-card');
+            let name = "Producto Seleccionado";
+            let price = "0.00";
+            if (card) {
+                const nameEl = card.querySelector('.cat-prod-name');
+                const priceEl = card.querySelector('.cat-prod-price');
+                if (nameEl) name = nameEl.innerText;
+                if (priceEl) price = priceEl.innerText.replace('Bs.', '').trim();
+            }
+            let cart = JSON.parse(localStorage.getItem('ferreteria_cart')) || [];
+            cart.push({ name: name, price: parseFloat(price), qty: 1 });
+            localStorage.setItem('ferreteria_cart', JSON.stringify(cart));
+            window.location.href = '../views/carrito.html';
+        });
+    });
+</script>
+</body>
+</html>

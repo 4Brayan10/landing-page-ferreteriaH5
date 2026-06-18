@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ferretería Belén - Registro de Ventas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=Ibm+Plex+Sans:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1e",
+                        "secondary-fixed": "#ffdbca",
+                        "tertiary-container": "#314156",
+                        "surface-container-high": "#e6e8ea",
+                        "on-primary-fixed": "#00164e",
+                        "surface-variant": "#e0e3e5",
+                        "inverse-primary": "#b6c4ff",
+                        "surface-dim": "#d8dadc",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#dce1ff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#783200",
+                        "on-primary-container": "#90a8ff",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-low": "#f2f4f6",
+                        "background": "#f7f9fb",
+                        "on-surface-variant": "#444651",
+                        "primary": "#00236f",
+                        "tertiary": "#1b2b3f",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "surface-tint": "#4059aa",
+                        "secondary": "#9d4300",
+                        "on-secondary-fixed": "#341100",
+                        "on-tertiary-container": "#9dadc6",
+                        "on-primary-fixed-variant": "#264191",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "secondary-container": "#fd761a",
+                        "tertiary-fixed": "#d3e4fe",
+                        "inverse-surface": "#2d3133",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "outline": "#757682",
+                        "primary-container": "#1e3a8a",
+                        "outline-variant": "#c5c5d3",
+                        "surface": "#f7f9fb",
+                        "surface-container": "#eceef0",
+                        "on-tertiary-fixed": "#0b1c30",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#ffb690",
+                        "on-secondary-container": "#5c2400",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "display": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Ibm Plex Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen">
+<!-- TopNavBar -->
+<nav class="bg-primary-container flex justify-between items-center w-full px-6 py-3 max-w-full mx-auto fixed top-0 z-50 shadow-sm border-b border-outline-variant">
+<div class="flex items-center gap-8">
+<span class="text-xl font-black tracking-tight text-white">Ferretería Belén</span>
+<div class="hidden md:flex items-center space-x-6 font-headline text-body-md">
+<a class="text-surface-variant hover:text-white transition-colors duration-200" href="../index.html">Inicio</a>
+<a class="text-surface-variant hover:text-white transition-colors duration-200" href="dashboard.html">Gestión de Productos</a>
+<a class="text-white border-b-2 border-secondary-container pb-1 font-bold" href="ventas.html">Registro de Ventas</a>
+<a class="text-surface-variant hover:text-white transition-colors duration-200" href="compras.html">Registro de Compras</a>
+<a class="text-surface-variant hover:text-white transition-colors duration-200" href="consulta.html">Consulta de Productos</a>
+<a class="text-surface-variant hover:text-white transition-colors duration-200" href="reportes.html">Reportes</a>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-on-primary-container p-2 transition-all duration-200 active:scale-95 hover:bg-primary/10 rounded-full">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+<a href="login.html" class="text-on-primary-container p-2 transition-all duration-200 active:scale-95 hover:bg-primary/10 rounded-full">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+</a>
+</div>
+</nav>
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto flex flex-col items-center">
+<header class="mb-8 text-center w-full">
+<h1 class="text-3xl font-black tracking-tighter text-primary uppercase mx-auto">REGISTRO DE VENTAS</h1>
+<p class="text-on-surface-variant font-label text-label-md mx-auto">Complete la información del terminal para procesar una nueva transacción.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full">
+<!-- Form Sections (LHS) -->
+<div class="lg:col-span-4 space-y-6 flex flex-col items-center">
+<!-- Formulario Cabecera -->
+<section class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm mx-auto w-full">
+<div class="flex items-center gap-2 mb-6 border-b border-outline-variant pb-2">
+<span class="material-symbols-outlined text-primary" data-icon="receipt">receipt</span>
+<h2 class="font-headline font-bold text-primary">Información General</h2>
+</div>
+<div class="space-y-4">
+<div class="group">
+<label class="block font-label text-label-md font-semibold text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors">Cliente (CI_cli)</label>
+<div class="relative">
+<input class="w-full bg-surface-bright border border-outline-variant px-4 py-3 rounded text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Ingrese CI del cliente" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline text-sm" data-icon="person_search">person_search</span>
+</div>
+</div>
+<div class="group">
+<label class="block font-label text-label-md font-semibold text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors">Empleado (CI_emp)</label>
+<input class="w-full bg-surface-container border border-outline-variant px-4 py-3 rounded text-on-surface-variant font-medium cursor-not-allowed" disabled="" type="text" value="9823412-1 (Admin)"/>
+</div>
+<div class="group">
+<label class="block font-label text-label-md font-semibold text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors">Fecha Venta (Fecha_venta)</label>
+<input class="w-full bg-surface-bright border border-outline-variant px-4 py-3 rounded text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" type="date" value="2023-10-27"/>
+</div>
+</div>
+</section>
+<!-- Formulario Detalle -->
+<section class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm relative overflow-hidden mx-auto w-full">
+<div class="absolute top-0 right-0 p-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-widest px-2">Entrada de Item</div>
+<div class="flex items-center gap-2 mb-6 border-b border-outline-variant pb-2 mt-2">
+<span class="material-symbols-outlined text-secondary" data-icon="add_shopping_cart">add_shopping_cart</span>
+<h2 class="font-headline font-bold text-primary">Detalle de Producto</h2>
+</div>
+<div class="space-y-4">
+<div class="group">
+<label class="block font-label text-label-md font-semibold text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors">Producto (nombre_prod)</label>
+<select class="w-full bg-surface-bright border border-outline-variant px-4 py-3 rounded text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all appearance-none">
+<option>Seleccione un producto...</option>
+<option>Cemento Portland Gris 50kg</option>
+<option>Tornillo Tirafondo 3"</option>
+<option>Pintura Látex Blanca 20L</option>
+<option>Taladro Percutor 800W</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="group">
+<label class="block font-label text-label-md font-semibold text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors">Cantidad</label>
+<input class="w-full bg-surface-bright border border-outline-variant px-4 py-3 rounded text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" min="1" type="number" value="1"/>
+</div>
+<div class="group">
+<label class="block font-label text-label-md font-semibold text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors">Descuento (%)</label>
+<input class="w-full bg-surface-bright border border-outline-variant px-4 py-3 rounded text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" max="100" min="0" type="number" value="0"/>
+</div>
+</div>
+<button class="w-full bg-secondary-container hover:bg-secondary text-white font-bold py-4 rounded-lg shadow-md transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 mt-4">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+                            AGREGAR PRODUCTO
+                        </button>
+</div>
+</section>
+</div>
+<!-- Resumen Table & Total (RHS) -->
+<div class="lg:col-span-8 flex flex-col gap-6 flex flex-col items-center">
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm flex-grow overflow-hidden flex flex-col mx-auto w-full">
+<div class="p-6 border-b border-outline-variant flex justify-between items-center bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="list_alt">list_alt</span>
+<h2 class="font-headline font-bold text-primary">Resumen de Venta</h2>
+</div>
+<span class="bg-tertiary-container text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">3 Items</span>
+</div>
+<div class="overflow-x-auto flex-grow">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-highest/30 border-b border-outline-variant">
+<th class="px-6 py-4 font-label text-label-md font-black text-on-surface-variant uppercase tracking-wider">Producto</th>
+<th class="px-6 py-4 font-label text-label-md font-black text-on-surface-variant uppercase tracking-wider text-center">Cant.</th>
+<th class="px-6 py-4 font-label text-label-md font-black text-on-surface-variant uppercase tracking-wider text-right">Precio Unit.</th>
+<th class="px-6 py-4 font-label text-label-md font-black text-on-surface-variant uppercase tracking-wider text-right">Dcto.</th>
+<th class="px-6 py-4 font-label text-label-md font-black text-on-surface-variant uppercase tracking-wider text-right">Subtotal</th>
+<th class="px-6 py-4"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/30">
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-4 font-medium text-on-surface">Cemento Portland Gris 50kg</td>
+<td class="px-6 py-4 text-center">10</td>
+<td class="px-6 py-4 text-right font-label">$ 45.00</td>
+<td class="px-6 py-4 text-right text-error font-semibold">0%</td>
+<td class="px-6 py-4 text-right font-bold text-primary">$ 450.00</td>
+<td class="px-6 py-4 text-center">
+<button class="text-outline hover:text-error transition-colors p-1 rounded hover:bg-error/10">
+<span class="material-symbols-outlined text-lg" data-icon="delete_outline">delete_outline</span>
+</button>
+</td>
+</tr>
+<tr class="bg-surface-container-low/20 hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-4 font-medium text-on-surface">Pintura Látex Blanca 20L</td>
+<td class="px-6 py-4 text-center">2</td>
+<td class="px-6 py-4 text-right font-label">$ 120.00</td>
+<td class="px-6 py-4 text-right text-error font-semibold">5%</td>
+<td class="px-6 py-4 text-right font-bold text-primary">$ 228.00</td>
+<td class="px-6 py-4 text-center">
+<button class="text-outline hover:text-error transition-colors p-1 rounded hover:bg-error/10">
+<span class="material-symbols-outlined text-lg" data-icon="delete_outline">delete_outline</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-4 font-medium text-on-surface">Taladro Percutor 800W</td>
+<td class="px-6 py-4 text-center">1</td>
+<td class="px-6 py-4 text-right font-label">$ 315.00</td>
+<td class="px-6 py-4 text-right text-error font-semibold">0%</td>
+<td class="px-6 py-4 text-right font-bold text-primary">$ 315.00</td>
+<td class="px-6 py-4 text-center">
+<button class="text-outline hover:text-error transition-colors p-1 rounded hover:bg-error/10">
+<span class="material-symbols-outlined text-lg" data-icon="delete_outline">delete_outline</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pie de Página (Resumen) -->
+<div class="p-8 bg-surface-container-highest/40 border-t-2 border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-end gap-6">
+<div class="text-right">
+<span class="block text-on-surface-variant text-xs font-bold uppercase tracking-widest mb-1">Subtotal</span>
+<span class="text-xl font-label text-on-surface-variant">$ 1,003.00</span>
+</div>
+<div class="text-right">
+<span class="block text-error text-xs font-bold uppercase tracking-widest mb-1">Descuento Global</span>
+<span class="text-xl font-label text-error">-$ 10.00</span>
+</div>
+<div class="text-right border-l border-outline-variant pl-6">
+<span class="block text-primary text-xs font-bold uppercase tracking-widest mb-1">TOTAL A PAGAR</span>
+<span class="text-4xl font-black text-primary tracking-tighter leading-none">$ 993.00</span>
+</div>
+</div>
+<button class="w-full md:w-auto bg-primary hover:bg-primary-container text-white px-12 py-5 rounded-lg shadow-lg font-black text-lg tracking-widest transition-all duration-200 active:scale-95 flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="point_of_sale" style="font-variation-settings: 'FILL' 1;">point_of_sale</span>
+                                CONFIRMAR VENTA
+                            </button>
+</div>
+</div>
+</section>
+<!-- Promotional Image / Visual Anchor -->
+<div class="relative h-48 rounded-xl overflow-hidden shadow-sm group">
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 transition-all duration-700" data-alt="A wide-angle, high-quality photograph of a meticulously organized hardware store warehouse. Rows of high-reaching metal shelving units are stocked with building materials, power tools, and industrial supplies. The lighting is bright and professional, highlighting the textures of steel and wood, conveying a sense of efficiency and precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE6KbUpFYNjSMetSTHiFmKuB5kjoMOgFtLcwM6KBxOmx8-L9Esu4WndWJBjdUs0WXX1Rc4k1C0WN1r7XHlDeBjoIY8HZhA-kQV1hQU5X7vq7nK3rmRjjgtFiRKCuddeglHq3KElPlIowdK24VzvfeDAI_PHHC5gJdokGS_lzqHTTfF98Rhy_k1dKDvlQLsRe92cARUYdhSQjgfVJ7ZIFrQ1bxDUHm6deILDza2f3guEeiO55oqnbJu5SHzKKJCDtw39ZRJehR6cS8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent flex items-center px-8">
+<div>
+<h3 class="text-white font-bold text-xl uppercase tracking-tighter">Terminal de Ventas #04</h3>
+<p class="text-primary-fixed text-sm opacity-80">Operación segura - Ferretería Belén Central</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- FAB for quick action (optional context) -->
+<button class="fixed bottom-8 right-8 bg-secondary-container text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-90 transition-all md:hidden">
+<span class="material-symbols-outlined" data-icon="shopping_cart_checkout">shopping_cart_checkout</span>
+</button>
+</body></html>

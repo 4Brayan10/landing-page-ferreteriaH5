@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Ferretería Belén | Tienda en Línea</title>
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS de la Tienda -->
+    <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+
+<!-- HEADER ESTILO E-COMMERCE -->
+<header>
+    <div class="header-top">
+        <a href="#" class="logo">
+            <i class="fas fa-tools"></i> Ferretería<span>Belén</span>
+        </a>
+        
+        <!-- Buscador Central -->
+        <div class="search-bar-container">
+            <select id="headerCategorySelect">
+                <option value="all">Todas las categorías</option>
+            </select>
+            <input type="text" id="headerSearchInput" placeholder="¿Qué estás buscando? (Ej. Ladrillo, Cemento...)">
+            <button id="headerSearchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="header-actions">
+            <a href="modulos/Documento.html" class="action-btn">
+                <i class="fas fa-book"></i> Manual
+            </a>
+            <a href="views/login.html" class="action-btn">
+                <i class="fas fa-user-circle"></i> Mi Cuenta
+            </a>
+            <a href="views/carrito.html" class="action-btn">
+                <i class="fas fa-shopping-cart"></i> Carrito
+            </a>
+            <a href="views/creador.html" class="action-btn">
+                <i class="fas fa-code"></i> Creador
+            </a>
+        </div>
+    </div>
+    
+    <!-- Navegación Secundaria de Categorías -->
+    <div class="header-nav">
+        <a href="modulos/ofertas.html"><i class="fas fa-tags"></i> Ofertas</a>
+        <a href="modulos/lo-nuevo.html"><i class="fas fa-star"></i> Lo Nuevo</a>
+        
+        <a href="modulos/material-grueso.html">Fierros y Aceros</a>
+        <a href="modulos/pinturas.html">Pinturas</a>
+        <a href="modulos/herramientas.html">Herramientas</a>
+        <a href="modulos/plomeria.html">Plomería</a>
+        <a href="modulos/electricidad.html">Electricidad</a>
+        <a href="modulos/pinturas.html">Acabados</a>
+    </div>
+</header>
+
+<!-- CARRUSEL DE PRODUCTOS -->
+<section class="carousel-wrapper" id="carrusel-principal">
+    <div class="carousel-track" id="carouselTrack">
+
+        <!-- Slide 1: Cemento -->
+        <div class="carousel-slide">
+            <img src="assets/img/banner_cemento.png" alt="Cemento Portland Yura">
+            <div class="carousel-overlay"></div>
+            <div class="carousel-caption">
+                <div class="cat-label"><i class="fas fa-cubes"></i> Material Grueso</div>
+                <h2>Cemento Portland Yura<br>¡Tu mejor aliado!</h2>
+                <p>42.5 kg de potencia. Ideal para toda obra civil y vivienda. Calidad garantizada.</p>
+                <a href="modulos/material-grueso.html" class="btn-carousel"><i class="fas fa-arrow-right"></i> Ver más</a>
+            </div>
+        </div>
+
+        <!-- Slide 2: Pinturas -->
+        <div class="carousel-slide">
+            <img src="assets/img/banner_pinturas.png" alt="Pinturas Monopol">
+            <div class="carousel-overlay" style="background: linear-gradient(90deg, rgba(100,20,130,0.85) 0%, rgba(100,20,130,0.5) 50%, transparent 100%);"></div>
+            <div class="carousel-caption">
+                <div class="cat-label"><i class="fas fa-paint-roller"></i> Pinturas</div>
+                <h2>Pinturas Monopol<br>Hasta 30% OFF</h2>
+                <p>Látex, esmaltes, barnices y anticorrosivos. Los mejores acabados para tu hogar.</p>
+                <a href="modulos/pinturas.html" class="btn-carousel"><i class="fas fa-arrow-right"></i> Ver ofertas</a>
+            </div>
+        </div>
+
+        <!-- Slide 3: Herramientas -->
+        <div class="carousel-slide">
+            <img src="assets/img/banner_herramientas.png" alt="Herramientas Profesionales">
+            <div class="carousel-overlay" style="background: linear-gradient(90deg, rgba(150,20,20,0.85) 0%, rgba(150,20,20,0.5) 50%, transparent 100%);"></div>
+            <div class="carousel-caption">
+                <div class="cat-label"><i class="fas fa-hammer"></i> Herramientas</div>
+                <h2>Herramientas<br>Profesionales</h2>
+                <p>Taladros, amoladoras, llaves y mucho más. Marcas Bosch y Stanley disponibles.</p>
+                <a href="modulos/herramientas.html" class="btn-carousel"><i class="fas fa-arrow-right"></i> Ver catálogo</a>
+            </div>
+        </div>
+
+        <!-- Slide 4: Electricidad -->
+        <div class="carousel-slide">
+            <img src="assets/img/banner_electricidad.png" alt="Material Eléctrico">
+            <div class="carousel-overlay" style="background: linear-gradient(90deg, rgba(10,50,100,0.9) 0%, rgba(10,50,100,0.55) 50%, transparent 100%);"></div>
+            <div class="carousel-caption">
+                <div class="cat-label"><i class="fas fa-plug"></i> Electricidad</div>
+                <h2>Material Eléctrico<br>¡Recién llegado!</h2>
+                <p>Focos LED, cables, disyuntores, tomacorrientes. Todo lo que necesitas para tu instalación.</p>
+                <a href="modulos/electricidad.html" class="btn-carousel"><i class="fas fa-arrow-right"></i> Ver lo nuevo</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Botones de navegación -->
+    <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Indicadores -->
+    <div class="carousel-dots" id="carouselDots">
+        <button class="carousel-dot active" data-index="0"></button>
+        <button class="carousel-dot" data-index="1"></button>
+        <button class="carousel-dot" data-index="2"></button>
+        <button class="carousel-dot" data-index="3"></button>
+    </div>
+</section>
+
+
+<!-- QUICK ACCESS CARDS -->
+<section class="quick-access">
+    
+    <div class="qa-card" onclick="openModal('modalCotizacion')">
+        <i class="fas fa-file-invoice-dollar qa-icon"></i>
+        <div class="qa-title">Cotiza tu pedido</div>
+        <div class="qa-desc">Y recibe lo que necesitas</div>
+    </div>
+    <div class="qa-card" onclick="openModal('modalCliente')">
+        <div class="qa-badge">¡Nuevo!</div>
+        <i class="fas fa-id-card qa-icon"></i>
+        <div class="qa-title">Cliente Frecuente</div>
+        <div class="qa-desc">Ahorra en tus compras</div>
+    </div>
+    <div class="qa-card" onclick="window.location.href='modulos/ofertas.html'">
+        <div class="qa-badge">¡Nuevo!</div>
+        <i class="fas fa-tags qa-icon" style="color: #e74c3c;"></i>
+        <div class="qa-title">Outlet Ferretero</div>
+        <div class="qa-desc">¡Aprovecha ahora!</div>
+    </div>
+    <div class="qa-card" onclick="openModal('modalTrabajo')">
+        <i class="fas fa-briefcase qa-icon"></i>
+        <div class="qa-title">Trabaja con nosotros</div>
+        <div class="qa-desc">Postula a nuestras vacantes</div>
+    </div>
+</section>
+
+<!-- MARCAS / PARTNERS -->
+<section class="brands-section">
+    <div class="brands-track">
+        <!-- Text-based logos to avoid broken external links -->
+        <div class="brand-text-logo" style="font-family: 'Arial Black', sans-serif; color: #cc0000;">BOSCH</div>
+        <div class="brand-text-logo" style="font-family: 'Arial Black', sans-serif; color: #ffcc00; -webkit-text-stroke: 1px #000;">STANLEY</div>
+        <div class="brand-text-logo" style="font-family: 'Verdana', sans-serif; color: #004d99; font-weight: 900; font-style: italic;">MONOPOL</div>
+        <div class="brand-text-logo" style="font-family: 'Impact', sans-serif; color: #003366; font-size: 1.8rem;">FANCESA</div>
+        <div class="brand-text-logo" style="font-family: 'Arial', sans-serif; color: #ffcc00; font-weight: 900; background: #e60000; padding: 2px 8px;">Sika</div>
+        
+        <div class="brand-text-logo" style="font-family: 'Arial Black', sans-serif; color: #cc0000;">BOSCH</div>
+        <div class="brand-text-logo" style="font-family: 'Arial Black', sans-serif; color: #ffcc00; -webkit-text-stroke: 1px #000;">STANLEY</div>
+        <div class="brand-text-logo" style="font-family: 'Verdana', sans-serif; color: #004d99; font-weight: 900; font-style: italic;">MONOPOL</div>
+        <div class="brand-text-logo" style="font-family: 'Impact', sans-serif; color: #003366; font-size: 1.8rem;">FANCESA</div>
+        <div class="brand-text-logo" style="font-family: 'Arial', sans-serif; color: #ffcc00; font-weight: 900; background: #e60000; padding: 2px 8px;">Sika</div>
+        
+        <div class="brand-text-logo" style="font-family: 'Arial Black', sans-serif; color: #cc0000;">BOSCH</div>
+        <div class="brand-text-logo" style="font-family: 'Arial Black', sans-serif; color: #ffcc00; -webkit-text-stroke: 1px #000;">STANLEY</div>
+        <div class="brand-text-logo" style="font-family: 'Verdana', sans-serif; color: #004d99; font-weight: 900; font-style: italic;">MONOPOL</div>
+        <div class="brand-text-logo" style="font-family: 'Impact', sans-serif; color: #003366; font-size: 1.8rem;">FANCESA</div>
+        <div class="brand-text-logo" style="font-family: 'Arial', sans-serif; color: #ffcc00; font-weight: 900; background: #e60000; padding: 2px 8px;">Sika</div>
+    </div>
+</section>
+
+<!-- CATÁLOGO EN LÍNEA (Vista Cliente) -->
+<section id="catalogo" class="catalog-section">
+    <div class="section-title">
+        <span>Catálogo de Productos</span>
+        <span style="font-size: 1rem; font-weight: normal; color: #7f8c8d;"><i class="fas fa-info-circle"></i> |</span>
+    </div>
+    
+    
+    <div id="clientProductsContainer" class="products-grid">
+        <!-- Renderizados dinámicamente por store.js -->
+    </div>
+</section>
+
+
+    <!-- Pestaña: Compras a Proveedores (RF-05) -->
+    <div id="tab-compras" class="demo-panel">
+        <form id="formPurchase" onsubmit="event.preventDefault(); registerPurchase();">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                <div class="demo-form-group" style="grid-column: 1 / -1;">
+                    <label>Seleccionar Producto Agotado/Bajo</label>
+                    <select id="purchaseProduct" required></select>
+                </div>
+                <div class="demo-form-group">
+                    <label>Proveedor</label>
+                    <input type="text" required placeholder="Nombre del proveedor">
+                </div>
+                <div class="demo-form-group">
+                    <label>Cantidad a Adquirir</label>
+                    <input type="number" id="purchaseQty" required min="1" placeholder="Ej. 50">
+                </div>
+            </div>
+            <button type="submit" class="demo-btn" style="background: #f39c12;"><i class="fas fa-truck-loading"></i> Registrar Compra y Abastecer</button>
+            <p id="msgPurchase" style="color: #2ecc71; margin-top: 1rem; display: none;"><i class="fas fa-check-circle"></i> Stock restablecido correctamente.</p>
+        </form>
+    </div>
+
+    <!-- Pestaña: Reportes (RF-04) -->
+    <div id="tab-reportes" class="demo-panel">
+        <div class="report-grid">
+            <div class="report-card">
+                <h4 style="color: #b9c7dd;">Ventas Realizadas</h4>
+                <div class="report-value" id="repVentas">0</div>
+                <p style="color: #2ecc71;">Unidades vendidas online</p>
+            </div>
+            <div class="report-card">
+                <h4 style="color: #b9c7dd;">Ganancias (Demo)</h4>
+                <div class="report-value" id="repGanancias">Bs. 0.00</div>
+                <p style="color: #2ecc71;">Ingresos generados</p>
+            </div>
+            <div class="report-card">
+                <h4 style="color: #b9c7dd;">Productos Agotados</h4>
+                <div class="report-value" id="repAgotados" style="color: #e74c3c;">0</div>
+                <p style="color: #e74c3c;">Requieren abastecimiento</p>
+            </div>
+            <div class="report-card">
+                <h4 style="color: #b9c7dd;">Compras Registradas</h4>
+                <div class="report-value" id="repCompras">0</div>
+                <p style="color: #3498db;">A proveedores</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>¿Necesitas ayuda?</h4>
+            <ul>
+                <li><a href="#">Atención al cliente</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#catalogo">Catálogo de Productos</a></li>
+                <li><a href="#" onclick="openModal('modalCotizacion')">Cotiza tu pedido</a></li>
+                <li><a href="#">Políticas de Devolución</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="#">Entrega a domicilio</a></li>
+                <li><a href="#">Asesoramiento técnico</a></li>
+                <li><a href="#">Ventas Corporativas / Por mayor</a></li>
+                <li><a href="#" onclick="openModal('modalCliente')">Portal Cliente Frecuente</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Somos Ferretería Belén</h4>
+            <ul>
+                <li><a href="#" onclick="openModal('modalTrabajo')">Trabaja con nosotros</a></li>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Nuestras Sucursales</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Ferretería Belén - Ingeniería de Sistemas | Sistema de Gestión 4.0</p>
+    </div>
+</footer>
+
+<!-- MODALES SIMULADOS -->
+<!-- 1. Cotiza tu pedido -->
+<div class="modal-overlay" id="modalCotizacion">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-file-invoice-dollar"></i> Cotizar Pedido</h3>
+            <button class="modal-close" onclick="closeModal('modalCotizacion')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <form onsubmit="handleDemoSubmit(event, 'cotizacionSuccess')">
+                <div class="form-group">
+                    <label>Nombre y Apellidos (Nombre_cli / Apellidos_cli)</label>
+                    <input type="text" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label>Número de Contacto (Num_contacto_cli)</label>
+                    <input type="number" placeholder="Ej. 70012345" required>
+                </div>
+                <div class="form-group">
+                    <label>Productos y Cantidad (Nombre_prod / Cant_prod)</label>
+                    <textarea rows="3" placeholder="Describe los materiales y cantidades" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Generar Cotización</button>
+                <div id="cotizacionSuccess" class="success-msg"><i class="fas fa-check-circle"></i> ¡Cotización guardada! Contactaremos al cliente pronto.</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 2. Cliente Frecuente -->
+<div class="modal-overlay" id="modalCliente">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-id-card"></i> Portal Cliente Frecuente</h3>
+            <button class="modal-close" onclick="closeModal('modalCliente')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <form onsubmit="handleDemoSubmit(event, 'clienteSuccess')">
+                <div class="form-group">
+                    <label>Cédula de Identidad (CI_cli)</label>
+                    <input type="number" placeholder="Ej. 1234567" required>
+                </div>
+                <button type="submit" class="btn-submit" style="background: #1565C0;">Consultar Beneficios</button>
+                <div id="clienteSuccess" class="success-msg" style="color: #1565C0; background: #e3f2fd;">
+                    <i class="fas fa-star" style="color: #f39c12;"></i> ¡Hola! Tienes <strong>450 Puntos</strong> acumulados. Tienes un 15% de descuento disponible.
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 4. Trabaja con nosotros -->
+<div class="modal-overlay" id="modalTrabajo">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-briefcase"></i> Postula a Ferretería Belén</h3>
+            <button class="modal-close" onclick="closeModal('modalTrabajo')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+            <form onsubmit="handleDemoSubmit(event, 'trabajoSuccess')">
+                <div class="form-group">
+                    <label>Cédula de Identidad (CI_emp)</label>
+                    <input type="number" placeholder="Ej. 1234567" required>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Nombres (Nombre_emp)</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ap. Paterno (Paterno_emp)</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ap. Materno (Materno_emp)</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Cargo a Postular (Cargo_emp)</label>
+                    <select required>
+                        <option value="">Selecciona un área</option>
+                        <option value="Ventas">Ventas</option>
+                        <option value="Almacen">Almacén</option>
+                        <option value="Administracion">Administración</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Teléfono (Num_contacto_emp)</label>
+                        <input type="number" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Correo (Correo_electronico_emp)</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Adjuntar Currículum (PDF)</label>
+                    <input type="file" accept=".pdf" required>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Postulación</button>
+                <div id="trabajoSuccess" class="success-msg"><i class="fas fa-check-circle"></i> ¡Postulación enviada a Recursos Humanos!</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Lógica para los modales
+    function openModal(id) {
+        document.getElementById(id).classList.add('active');
+    }
+    function closeModal(id) {
+        document.getElementById(id).classList.remove('active');
+        // Reset forms and success msgs
+        var form = document.querySelector('#'+id+' form');
+        if(form) form.reset();
+        var successMsg = document.querySelector('#'+id+' .success-msg');
+        if(successMsg) successMsg.style.display = 'none';
+    }
+    function handleDemoSubmit(event, successMsgId) {
+        event.preventDefault();
+        var successEl = document.getElementById(successMsgId);
+        if(successEl) successEl.style.display = 'block';
+    }
+    // Cerrar al clickear afuera
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal-overlay')) {
+            event.target.classList.remove('active');
+        }
+    }
+</script>
+
+<!-- BOTÓN WHATSAPP -->
+<a href="#" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Archivos Javascript -->
+<script src="js/store.js"></script>
+
+<!-- JavaScript del Carrusel -->
+<script>
+(function() {
+    const track = document.getElementById('carouselTrack');
+    const slides = track.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const totalSlides = slides.length;
+    let current = 0;
+    let autoTimer = null;
+
+    function goTo(index) {
+        current = (index + totalSlides) % totalSlides;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach(d => d.classList.remove('active'));
+        dots[current].classList.add('active');
+        
+        // Disparar la animación de CSS quitando y poniendo la clase "active" al slide
+        slides.forEach(s => s.classList.remove('active'));
+        slides[current].classList.add('active');
+    }
+
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+
+    function startAuto() {
+        autoTimer = setInterval(next, 4500);
+    }
+    function resetAuto() {
+        clearInterval(autoTimer);
+        startAuto();
+    }
+
+    document.getElementById('carouselNext').addEventListener('click', () => { next(); resetAuto(); });
+    document.getElementById('carouselPrev').addEventListener('click', () => { prev(); resetAuto(); });
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            goTo(parseInt(dot.dataset.index));
+            resetAuto();
+        });
+    });
+
+    // Soporte para deslizar con el dedo (touch)
+    let touchStartX = 0;
+    track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+        const diff = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); resetAuto(); }
+    });
+
+    startAuto();
+})();
+</script>
+</body>
+</html>

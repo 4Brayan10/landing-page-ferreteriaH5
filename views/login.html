@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Iniciar Sesión - Ferretería Belén</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;family=IBMPlex+Sans:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#191c1e",
+                      "secondary-fixed": "#ffdbca",
+                      "tertiary-container": "#314156",
+                      "surface-container-high": "#e6e8ea",
+                      "on-primary-fixed": "#00164e",
+                      "surface-variant": "#e0e3e5",
+                      "inverse-primary": "#b6c4ff",
+                      "surface-dim": "#d8dadc",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#dce1ff",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed-variant": "#783200",
+                      "on-primary-container": "#90a8ff",
+                      "on-error": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface-container-low": "#f2f4f6",
+                      "background": "#f7f9fb",
+                      "on-surface-variant": "#444651",
+                      "primary": "#00236f",
+                      "tertiary": "#1b2b3f",
+                      "on-tertiary-fixed-variant": "#38485d",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#f7f9fb",
+                      "surface-tint": "#4059aa",
+                      "secondary": "#9d4300",
+                      "on-secondary-fixed": "#341100",
+                      "on-tertiary-container": "#9dadc6",
+                      "on-primary-fixed-variant": "#264191",
+                      "on-primary": "#ffffff",
+                      "surface-container-highest": "#e0e3e5",
+                      "secondary-container": "#fd761a",
+                      "tertiary-fixed": "#d3e4fe",
+                      "inverse-surface": "#2d3133",
+                      "tertiary-fixed-dim": "#b7c8e1",
+                      "outline": "#757682",
+                      "primary-container": "#1e3a8a",
+                      "outline-variant": "#c5c5d3",
+                      "surface": "#f7f9fb",
+                      "surface-container": "#eceef0",
+                      "on-tertiary-fixed": "#0b1c30",
+                      "on-surface": "#191c1e",
+                      "secondary-fixed-dim": "#ffb690",
+                      "on-secondary-container": "#5c2400",
+                      "primary-fixed-dim": "#b6c4ff",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Inter"],
+                      "display": ["Inter"],
+                      "body": ["Inter"],
+                      "label": ["Ibm Plex Sans"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+      </style>
+</head>
+<body class="bg-background min-h-screen flex items-center justify-center relative overflow-hidden">
+<!-- Background Industrial Pattern Decor -->
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
+<div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #00236f 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<!-- Main Container -->
+<main class="w-full px-4 flex justify-center items-center z-10 mx-auto max-w-7xl">
+<div class="flex flex-col md:flex-row w-full max-w-4xl bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden border border-outline-variant">
+<!-- Branding/Image Side -->
+<div class="hidden md:flex md:w-1/2 relative bg-primary-container p-12 flex-col justify-between text-white overflow-hidden">
+<!-- Abstract Design Elements -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-container opacity-20 -mr-32 -mt-32 rounded-full"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-primary opacity-30 -ml-24 -mb-24 rounded-full"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-4xl text-secondary-container" data-icon="construction">construction</span>
+<h1 class="text-2xl font-black tracking-tight text-white">Ferretería Belén</h1>
+</div>
+<p class="text-on-primary-container text-lg leading-relaxed font-body">
+                        Soluciones robustas para profesionales de la construcción. Tu aliado confiable en materiales y logística.
+                    </p>
+</div>
+<div class="relative z-10">
+<img alt="Professional Industrial Workspace" class="rounded-lg shadow-lg border border-primary/20 brightness-90" data-alt="A professional industrial hardware store environment with organized shelves of metal tools and construction equipment. The lighting is high-key and modern, reflecting off metallic surfaces in a clean, high-precision warehouse setting. The color palette features deep navy blues and industrial grays with sharp focus on logistical efficiency. The atmosphere is corporate yet functional and trustworthy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrxIgh6gEN3I9ZIBSTRtmR-zedrM7nz7tJOBF8UUJKHw2lnD981kORAvbBhVRWsNuR3kQSiRQhXGwjIzOogV1l_QCuUkgfmia4PWiKR0Rwt1zwHkQ3DVeSPXRTDWNmUBkY84PdLM9oEuhulWBzIZ41HeljRtwS6xGpaEHLF0vz3uq7cGRSNNesKl3VvR6gEw9dHWAi2kih0Hz8VT-MoBdDZA3Uby6ISLx3oHdX_2Z6th61r3INR5LfMZ34SBooFAUDmECMkzjkKWY"/>
+</div>
+</div>
+<!-- Login Form Side -->
+<div class="w-full md:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+<div class="mb-10">
+<div class="md:hidden flex items-center gap-2 mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="construction">construction</span>
+<span class="font-black text-xl tracking-tight">Ferretería Belén</span>
+</div>
+<h2 class="text-3xl font-black text-on-surface mb-2 tracking-tight">Iniciar Sesión</h2>
+<p class="text-on-surface-variant font-body">Accede al terminal administrativo de gestión.</p>
+</div>
+<form id="loginForm" class="space-y-6">
+<!-- Error Message -->
+<div id="errorMessage" class="hidden bg-error-container text-on-error-container text-sm font-bold p-3 rounded-lg border border-error mb-4 flex items-center gap-2">
+    <span class="material-symbols-outlined text-error">error</span>
+    <span>Usuario o contraseña incorrectos.</span>
+</div>
+<!-- User Field -->
+<div class="space-y-2">
+<label class="block text-label-md font-semibold text-on-surface-variant font-label uppercase tracking-wider" for="Nom_usu">Usuario</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-lg" data-icon="person">person</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-3 bg-surface border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-on-surface placeholder:text-outline/50" id="Nom_usu" name="Nom_usu" placeholder="Ingresa tu nombre de usuario" type="text" required/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<label class="block text-label-md font-semibold text-on-surface-variant font-label uppercase tracking-wider" for="Contrasena_usu">Contraseña</label>
+<a class="text-xs font-semibold text-primary hover:underline transition-all" href="#">¿Olvidaste tu contraseña?</a>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-lg" data-icon="lock">lock</span>
+</div>
+<input class="block w-full pl-10 pr-10 py-3 bg-surface border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-on-surface placeholder:text-outline/50" id="Contrasena_usu" name="Contrasena_usu" placeholder="••••••••" type="password" required/>
+<button class="absolute inset-y-0 right-0 pr-3 flex items-center" type="button">
+<span class="material-symbols-outlined text-outline hover:text-primary transition-colors text-lg" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember Me -->
+<div class="flex items-center">
+<input class="h-4 w-4 text-primary focus:ring-primary border-outline-variant rounded" id="remember-me" name="remember-me" type="checkbox"/>
+<label class="ml-2 block text-sm text-on-surface-variant" for="remember-me">Recordar sesión en este equipo</label>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-secondary-container hover:bg-secondary text-white font-bold py-4 px-6 rounded-lg shadow-md transition-all active:scale-95 flex items-center justify-center gap-2 group" type="submit">
+<span>Ingresar</span>
+<span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform" data-icon="login">login</span>
+</button>
+</form>
+<!-- Footer Info -->
+<div class="mt-12 pt-8 border-t border-outline-variant/30 text-center">
+<p class="text-sm text-on-surface-variant">
+                        © 2024 Ferretería Belén. Panel de Control v2.4.0
+                    </p>
+<div class="flex justify-center gap-4 mt-2">
+<span class="text-outline/30">•</span>
+<a class="text-xs text-outline hover:text-primary transition-colors" href="#">Usuario: admin | Contraseña: 123</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Visual Anchor Decorations -->
+<div class="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-container via-secondary-container to-primary-container"></div>
+
+<script>
+    // Base de datos simulada
+    const usersDB = [
+        { username: 'admin', password: '123', role: 'Administrador' },
+        { username: 'vendedor', password: '123', role: 'Ventas' },
+        { username: 'almacen', password: '123', role: 'Inventario' }
+    ];
+
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent form submission
+        
+        const userVal = document.getElementById('Nom_usu').value;
+        const passVal = document.getElementById('Contrasena_usu').value;
+        const errorMsg = document.getElementById('errorMessage');
+
+        // Check against mock DB
+        const user = usersDB.find(u => u.username === userVal && u.password === passVal);
+
+        if (user) {
+            // Login exitoso, simular guardar en localstorage (opcional) y redirigir
+            errorMsg.classList.add('hidden');
+            
+            // Efecto visual de carga en el botón
+            const btn = this.querySelector('button[type="submit"]');
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin" data-icon="sync">sync</span> <span>Autenticando...</span>';
+            
+            setTimeout(() => {
+                window.location.href = 'dashboard.html';
+            }, 800);
+        } else {
+            // Login fallido
+            errorMsg.classList.remove('hidden');
+            // Shake effect
+            errorMsg.classList.add('animate-pulse');
+            setTimeout(() => errorMsg.classList.remove('animate-pulse'), 500);
+        }
+    });
+</script>
+</body></html>

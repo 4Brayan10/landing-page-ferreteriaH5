@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Manual Técnico - Ferretería Belén</title>
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS Propios -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<div class="bg-aura"></div>
+
+<header class="header">
+    <div class="container nav-container">
+        <div class="logo">
+            <div class="logo-icon"><i class="fas fa-tools"></i></div>
+            <div class="logo-text">Ferretería<span class="gradient-text">Belén</span></div>
+        </div>
+        <button class="mobile-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#capitulo1" class="nav-link">1. Introducción</a></li>
+                <li><a href="#capitulo2" class="nav-link">2. Teórico</a></li>
+                <li><a href="#capitulo3" class="nav-link">3. Desarrollo</a></li>
+                <li><a href="#punto313" class="nav-link" onclick="openAndScrollTo(event, 'punto313')">Matriz RTM</a></li>
+                <li><a href="#capitulo4" class="nav-link">4. Bibliografía</a></li>
+            </ul>
+        </nav>
+        <div class="system-access" style="display: flex; gap: 1rem; align-items: center;">
+            <a href="../index.html" class="btn-login-static" style="background: linear-gradient(135deg, #3498db, #2980b9); color: #fff; padding: 0.5rem 1.2rem; border-radius: 8px; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: 0.3s; box-shadow: 0 4px 10px rgba(52,152,219,0.3);">
+                <i class="fas fa-arrow-left"></i> Volver al Inicio
+            </a>
+        </div>
+    </div>
+</header>   
+
+<main style="padding-top: 50px;">
+
+<!-- ============================================================ -->
+<!-- HERO SECTION                                                 -->
+<!-- ============================================================ -->
+<section class="hero">
+    <div class="container hero-content">
+        <div style="flex: 1; text-align: center;">
+            <div class="hero-badge" style="color: #f39c12; font-weight: 600;">
+                <i class="fas fa-graduation-cap"></i> Ingeniería de Sistemas
+            </div>
+            <h1 style="font-size: 2.5rem; margin-top: 1rem;">
+                Sistema de Información Web para la <span class="gradient-text">Gestión, Control de Inventario y Consultas</span> de Productos de Construcción de la Ferretería Belén
+            </h1>
+            <p style="font-size: 1.15rem; color: #b9c7dd; max-width: 800px; margin: 1.5rem auto 0 auto;">
+                Control de inventario, ventas en tiempo real, compras automatizadas y consultas inteligentes. Arquitectura robusta con metodologías ágiles.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CAPÍTULO 1: MARCO INTRODUCTORIO                                -->
+<!-- ============================================================ -->
+<section id="capitulo1" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Capítulo 1: <span class="gradient-text">Marco Introductorio</span></h2>
+            <div class="gradient-line"></div>
+        </div>
+        
+        <div class="content-block" style="margin-top: 2rem; color: #e2e8f0; line-height: 1.8;">
+
+            <!-- 1.1 Introducción -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>1.1. Introducción</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <p style="margin-bottom: 1rem; padding-top: 1rem;">La transformación digital se ha convertido en un factor clave para mejorar la competitividad y eficiencia de las organizaciones, especialmente en pequeñas y medianas empresas dedicadas a actividades comerciales. En el sector ferretero, la gestión adecuada de inventarios, ventas y compras constituye un elemento fundamental para garantizar la disponibilidad de productos, optimizar recursos y brindar una atención eficiente a los clientes.</p>
+                <p style="margin-bottom: 1rem;">La Ferretería Belén desarrolla actividades relacionadas con la comercialización de materiales y productos para la construcción, manejando un amplio catálogo de artículos que requieren un control permanente de existencias, movimientos de inventario y registro de transacciones comerciales. Sin embargo, gran parte de estos procesos se realizan de forma manual mediante registros físicos y anotaciones tradicionales, lo que limita la capacidad de administrar la información de manera eficiente y oportuna.</p>
+                <p style="margin-bottom: 1rem;">Desde la perspectiva de la Ingeniería de Sistemas, la automatización de procesos mediante sistemas de información permite integrar datos, reducir errores operativos y proporcionar información confiable para la toma de decisiones. En este contexto, surge la necesidad de desarrollar un Sistema de Información Web para la Gestión, Control de Inventarios y Consultas de Productos de Construcción de la Ferretería Belén, orientado a optimizar los procesos administrativos y operativos mediante el uso de tecnologías web, bases de datos relacionales y mecanismos de control automatizado.</p>
+                <p style="margin-bottom: 2rem;">La implementación de esta solución tecnológica permitirá centralizar la información de productos, ventas, compras y consultas, facilitando el acceso en tiempo real a los datos del negocio y contribuyendo al fortalecimiento de la gestión organizacional de la empresa.</p>
+            </div>
+
+            <!-- 1.2 Título del Sistema -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>1.2. Título del Sistema</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem; text-align: center;">
+                    <p style="font-size: 1.2rem; font-weight: 600;">Sistema de Información Web para la Gestión, Control de Inventarios y Consultas de Productos de Construcción de la Ferretería Belén.</p>
+                </div>
+            </div>
+
+            <!-- 1.3 Planteamiento del Problema -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>1.3. Planteamiento del Problema</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <p style="margin-bottom: 1rem;">Actualmente, la Ferretería Belén presenta deficiencias en la gestión y control de su inventario debido a la utilización de procedimientos manuales para el registro de productos, ventas y compras. Esta situación genera dificultades para mantener información actualizada sobre la disponibilidad de productos, ocasionando inconsistencias en los registros, errores humanos frecuentes y retrasos en las operaciones diarias. La ausencia de un sistema integrado impide realizar un seguimiento preciso de las entradas y salidas de inventario, provocando pérdidas económicas derivadas de productos vencidos, dañados o extraviados. Asimismo, existe dificultad para identificar productos con alta demanda, productos de baja rotación y niveles críticos de stock, afectando directamente la planificación de compras y la reposición de mercancías.</p>
+                <p style="margin-bottom: 1.5rem;">Bajo este contexto, se formula la siguiente Pregunta Esencial desarrollada:</p>
+                <div class="glass-card" style="margin-bottom: 1.5rem; text-align: center; border-left: 4px solid #f39c12;">
+                    <strong>¿Cómo diseñar e implementar un sistema de información web que permita automatizar, optimizar y asegurar el control del inventario en la Ferretería Belén, garantizando precisión en los registros, acceso en tiempo real a la información y soporte efectivo para la toma de decisiones?</strong>
+                </div>
+                <p style="margin-bottom: 1rem; padding-top: 1rem;">La presente investigación busca responder esta interrogante mediante el análisis, diseño y propuesta de una solución tecnológica que permita mejorar significativamente la gestión de inventarios, ventas, compras y consultas de productos dentro de la organización.</p>
+            </div>
+
+            <!-- 1.4 Objetivos -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>1.4. Objetivos</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>1.4.1. Objetivo General</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>Desarrollar un sistema de información web para la gestión, control de inventarios y consulta de productos de construcción de la Ferretería Belén, mediante la integración de módulos de administración de productos, ventas, compras, reportes y consultas, con el propósito de automatizar los procesos operativos, garantizar la integridad de la información, optimizar el control del inventario y proporcionar soporte eficiente para la toma de decisiones administrativas.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>1.4.2. Objetivos Específicos</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <ul style="margin-left: 0.5rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Implementar un módulo de gestión de productos que permita registrar, actualizar, eliminar y consultar información relacionada con productos de construcción, incluyendo categorías, proveedores, precios y niveles de stock.</li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Desarrollar un módulo de gestión de ventas que registre transacciones comerciales en tiempo real, genere comprobantes y actualice automáticamente las existencias disponibles en el inventario.</li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Diseñar e implementar un módulo de gestión de compras a proveedores que permita registrar adquisiciones de productos y sincronizar automáticamente la actualización del stock almacenado.</li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Implementar un módulo de consulta de productos que facilite la búsqueda y visualización de información mediante filtros por nombre, categoría, disponibilidad y características del producto.</li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Desarrollar un módulo de generación de reportes que permita obtener información consolidada sobre inventarios, ventas, compras y ganancias para apoyar los procesos de control y toma de decisiones.</li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Implementar un mecanismo de autenticación y control de acceso basado en roles de usuario, garantizando la seguridad, confidencialidad e integridad de la información gestionada por el sistema.</li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Diseñar una arquitectura cliente-servidor basada en tecnologías web y bases de datos relacionales que asegure la disponibilidad, escalabilidad y mantenibilidad de la aplicación.</li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Automatizar los procesos de actualización de inventario mediante reglas de negocio que controlen las entradas y salidas de productos derivadas de compras y ventas realizadas en el sistema.</li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Diagramar la arquitectura técnica del sistema utilizando una arquitectura cliente-servidor en capas que permita una adecuada organización de los componentes del software.</li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Validar la propuesta del sistema mediante el desarrollo y despliegue de una Landing Page que permita presentar y evaluar las funcionalidades planteadas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1.5 Alcance y Taxonomía -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>1.5. Alcance y Taxonomía</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>1.5.1. Tipo de Sistema (Taxonomía)</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>Voy a tomar como base la bibliográfica de Ian Sommerville en su obra "Ingeniería de Software" el presente proyecto se clasifica formalmente dentro de las categorías de aplicaciones interactivas basadas en transacciones o compras.</p>
+                        <p>La justificación es que según Sommerville, las aplicaciones interactivas basadas en transacciones son aquellos sistemas de software que se ejecutan en una computadora remota y los cuales los usuarios acceden desde sus propias terminales para interactuar con la base de datos centralizada.</p>
+                        <p>El autor destaca que la función principal de estos sistemas es procesar las peticiones de los usuarios para actualizar la información de la base de datos o extraer datos de la misma, siendo algunos ejemplos las aplicaciones de gestión empresarial o comercios electrónicos. Cada una de estas acciones altera el estado de la base de datos central, requiriendo mecanismos que aseguren la integridad de los datos, la consistencia del inventario y el control adecuado de la concurrencia ósea evitando que dos clientes reserven la misma bolsa de cemento si solo queda una en stock.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>1.5.2. Alcances</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>El presente proyecto se enfoca en la ferretería "Belén", mediante el desarrollo de un sistema de información web que permita gestionar de manera eficiente los productos de construcción.</p>
+                        <p>El sistema contará con módulos definidos a partir de los casos de uso identificados durante el análisis del sistema:</p>
+                        <ul style="margin-left: 0.5rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Módulo de Inicio de Sesión:</strong> permitirá al administrador acceder al sistema mediante autenticación con usuario y contraseña, garantizando la seguridad y el control de acceso a la información.</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Módulo de Gestión de Productos:</strong> permitirá registrar, modificar, eliminar y consultar productos de construcción, administrando información como nombre, categoría, precio, stock, proveedor y fecha de vencimiento.</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Módulo de Gestión de Ventas:</strong> permitirá registrar ventas de productos, generar comprobantes y actualizar automáticamente el inventario después de cada transacción.</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Módulo de Gestión de Compras a Proveedores:</strong> permitirá registrar compras realizadas a proveedores y actualizar el stock disponible en el inventario.</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Módulo de Consulta de Productos:</strong> permitirá a los clientes buscar y visualizar productos disponibles mediante filtros por nombre, categoría o disponibilidad.</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Módulo de Generación de Reportes:</strong> permitirá generar reportes básicos de inventario, ventas, compras y ganancias para apoyar la administración de la ferretería.</li>
+                        </ul>
+                        <p>Asimismo, el sistema ayudará al administrador en el control de productos próximos a vencer, mejorando la verificación del inventario y evitando pérdidas económicas ocasionadas por productos vencidos o falta de control del stock.</p>
+                        <p>En futuras versiones, el sistema podría incorporar funcionalidades adicionales como facturación electrónica, pagos en línea, integración con otras sucursales, notificaciones automáticas de bajo stock, reservas de productos y reportes administrativos avanzados para mejorar la toma de decisiones.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>1.5.3. Límites</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>Los límites de nuestro proyecto, como será un sistema web solo se podrá usar con internet, las caídas del internet puede ser un gran problema para el sistema, tener un mejor internet es lo más óptimo.</p>
+                        <p>El sistema web solo se usará exclusivamente para la ferretería Belén, por lo que no completará la integración en otras sucursales ni su integración con otros sistemas externos.</p>
+                        <p>Finalmente, el sistema no incluirá funcionalidades como facturación electrónica, pagos en línea ni integración con plataformas externas, limitándose a la gestión interna de la ferretería.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1.6 Justificación -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>1.6. Justificación del Proyecto</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>1.6.1. Justificación Económica</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>El desarrollo del sistema de información web permitirá optimizar los procesos internos de la ferretería Belén, reduciendo la perdida de los productos ocasionada por el control manual ineficiente del inventario. Como también va disminuir el tiempo empleado en registros y consultas, lo que permitirá agilizar las operaciones diarias.</p>
+                        <p>Asimismo, a la automatización de tareas como el control de stock de los productos a punto de vencerse y el registro de ventas, se va reducir la probabilidad de errores humanos, mejorando la eficiencia operativa en el negocio. En consecuencia, los beneficios se traducen en un ahorro de tiempo y evitando a la pérdida de recursos, incrementando la rentabilidad de la ferretería.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>1.6.2. Justificación Académica</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>En el proyecto nos permite de manera práctica los conocimientos adquiridos en la carrera de Ingeniería de Sistemas, especialmente en áreas como análisis y diseño de sistemas, modelado UML, bases de datos y desarrollo de aplicaciones web.</p>
+                        <p>Como también se va emplear metodologías modernas como SCRUM y el desarrollo incremental, las cuales facilitan la organización del trabajo en etapas, esto nos va permitir validar avances de forma continua. Esto contribuye a fortalecer habilidades técnicas y metodologías necesarias para el desarrollo de soluciones reales en el ámbito profesional.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>1.6.3. Justificación Social</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>La implementación del sistema contribuirá a mejorar la atención al cliente, brindando acceso rápido y organizado a la información de los productos disponibles. Esto permitirá una mejor experiencia de compra y mayor satisfacción del cliente.</p>
+                        <p>De igual manera, el sistema reducirá errores humanos en la gestión de información, mejorando la confiabilidad de los datos. Además, promueve la digitalización de pequeñas empresas, contribuyendo al uso de tecnologías en negocios locales y fortaleciendo su competitividad en el mercado.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>1.6.4. Aporte Tecnológico</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>Los aportes tecnológicos son la sistematización web para la ferretería "Belén" de información de los productos que tienes en la ferretería Belén ordenándolos de forma en que cantidad tienen, cuál es su fecha de vencimiento, de que materia se trata, que material sale más rápido que otro y que ganancias tienes alrededor del mes.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CAPÍTULO 2: MARCO TEÓRICO                                      -->
+<!-- ============================================================ -->
+<section id="capitulo2" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Capítulo 2: <span class="gradient-text">Marco Teórico</span></h2>
+            <div class="gradient-line"></div>
+        </div>
+
+        <div class="content-block" style="margin-top: 2rem; color: #e2e8f0; line-height: 1.8;">
+
+            <!-- 2.1 Sistema -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.1. Sistema</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p style="margin-bottom: 1rem;">Es un conjunto ordenado de componentes relacionados entre sí, ya se trate de elementos materiales o conceptuales, dotado de una estructura, una composición y un entorno particulares. Se trata de un término que aplica a diversas áreas del saber, como la física, la biología y la informática o computación.</p>
+                    <p style="margin-bottom: 1rem;">Los sistemas son objeto de estudio de la Teoría de Sistemas o Teoría General de Sistemas, una disciplina que los aborda sea cuales sean desde una perspectiva múltiple, interdisciplinaria.</p>
+                    <p style="margin-bottom: 1rem;">Dentro de un sistema es posible prever el comportamiento de sus componentes si se modifican los demás, y además los sistemas poseen un propósito a cumplir, un fin último que garantiza su éxito.</p>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>2.1.1. Sistema Web</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>Más conocido como aplicación web, es un tipo de software que se ejecuta en un servidor remoto y se accede a través de un navegador web. A diferencia de las aplicaciones tradicionales que requieren ser descargadas e instaladas en un dispositivo, los sistemas web permiten a los usuarios interactuar con ellos a través de internet, sin necesidad de instalar ningún software adicional.</p>
+                        <p>Se puede acceder en cualquier lugar y en cualquier dispositivo con conexión a internet lo que facilita la colaboración y el trabajo remoto.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>2.1.2. Sistema web de información</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>Podemos definir entonces como sistema de información al conjunto de elementos relacionados y ordenados, según ciertas reglas que aporta al sistema, es decir, a la organización a la que sirve y que marca sus directrices de funcionamiento- la información necesaria para el cumplimiento de sus fines; para ello, debe recoger, procesar y almacenar datos, procedentes tanto de la organización como de fuentes externas, con el propósito de facilitar su recuperación, elaboración y presentación. Actualmente, los sistemas de información se encuentran al alcance de las grandes masas de usuarios por medio de Internet; así se crean las bases de un nuevo modelo, en el que los usuarios interactúan directamente con los sistemas de información para satisfacer sus necesidades de información.</p>
+                        <p>Como también es una plataforma digital diseñada para recopilar, procesar y distribuir datos a través de internet, permitiendo a los usuarios acceder y gestionar información de manera rápida y segura.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.2 Gestión -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.2. Gestión</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p style="margin-bottom: 1rem;">El término gestión es utilizado para referirse al conjunto de acciones, o diligencias que permiten la realización de cualquier actividad o deseo. Dicho de otra manera, una gestión se refiere a todos aquellos trámites que se realizan con la finalidad de resolver una situación o materializar un proyecto.</p>
+                    <p style="margin-bottom: 1rem;">Como también la coordinación de actividades a quien corresponde o la interacciones y sus semejantes.</p>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>2.2.1. Gestión y Consulta</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>Es un conjunto, de términos que describen el ciclo completo de manejo de datos en un sistema de información. Mientras la gestión se encarga de la administración y mantenimiento de los datos, la consulta permite extraer y visualizar esa información de manera eficiente para apoyar procesos operativos y estratégicos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.3 Gestión y consulta de productos de construcción -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.3. Gestión y consulta de productos de construcción</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p>En la construcción de obras se realizan una serie de actividades entre las cuales se pueden distinguir dos tipos: las que intervienen en la edificación, como los cimientos, muros y columnas, y las que apoyan la construcción de la obra.</p>
+                    <p>Una gestión de materiales de construcción tiene que estar muy organizada para que la construcción este muy planificado para tener una obra eficiente.</p>
+                    <p>El suministro oportuno de materiales influye directamente en la correcta ejecución de los trabajos, ya que garantiza una alta productividad en la medida en que proporciona a los obreros los insumos necesarios para ejecutar sus actividades. Contar con el material adecuado y en cantidad suficiente asegura la continuidad de la obra conforme a la planificación establecida.</p>
+                    <p>En caso contrario, la falta de suministro del material genera una discontinuidad de las actividades, como también en el rendimiento de los trabajadores, desorden de la ejecución, tareas sin completar en la ejecución de tareas posteriores.</p>
+                </div>
+            </div>
+
+            <!-- 2.4 Ferretería -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.4. Ferretería</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p>Es un lugar especializado donde puedes encontrar todo lo necesario para construir, reparar o mantener estructuras, tanto en casa como en entornos industriales. En este lugar conseguirás todo lo necesario para tus proyectos de bricolaje, reparaciones o construcción, por ejemplo: tornillos, martillos, pintura, cables eléctricos o taladros.</p>
+                    <p>El tipo de clientes a los que se dirige una ferretería va a depender de su dimensión, pudiendo ser clientes particulares que acuden puntualmente al establecimiento a comprar algún artículo porque les ha surgido una necesidad en su hogar.</p>
+                </div>
+            </div>
+
+            <!-- 2.5 Inventario -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.5. Inventario</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p style="margin-bottom: 1rem;">El inventario es el conjunto de bienes, productos o materiales que posee una empresa para su comercialización o utilización en sus operaciones. Su control permite conocer las existencias disponibles, evitar pérdidas y garantizar el abastecimiento oportuno de productos.</p>
+                    <p style="margin-bottom: 1rem;">Un adecuado control de inventario ayuda a reducir costos, mejorar la planificación de compras y mantener información actualizada sobre el stock disponible.</p>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>2.5.1. Control de Inventario</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>El control de inventario consiste en supervisar, registrar y administrar las entradas y salidas de productos dentro de una organización. Su objetivo es mantener niveles adecuados de existencias, evitando tanto el exceso como la escasez de productos.</p>
+                        <p>En una ferretería, el control de inventario permite conocer qué materiales están disponibles, cuáles requieren reposición y cuáles presentan baja rotación o riesgo de vencimiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.6 Base de Datos -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.6. Base de Datos</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p style="margin-bottom: 1rem;">Una base de datos es un conjunto organizado de información almacenada de manera estructurada para facilitar su acceso, consulta y actualización.</p>
+                    <p style="margin-bottom: 1rem;">Las bases de datos permiten gestionar grandes cantidades de información de forma eficiente, garantizando la integridad, seguridad y disponibilidad de los datos.</p>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>2.6.1. Base de Datos Relacional</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                        <p>Es un tipo de base de datos que organiza la información en tablas relacionadas entre sí mediante claves primarias y claves foráneas.</p>
+                        <p>Este modelo facilita el almacenamiento y recuperación de información, evitando duplicidad de datos y manteniendo la consistencia de la información.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.7 Tecnologías Web -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.7. Tecnologías Web</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p>Las tecnologías web son el conjunto de herramientas, lenguajes de programación, protocolos y plataformas que permiten el desarrollo, implementación y funcionamiento de aplicaciones accesibles a través de Internet. Estas tecnologías facilitan la comunicación entre los usuarios y los servidores, permitiendo el intercambio de información de manera rápida, eficiente y segura.</p>
+                    <p>En la actualidad, las tecnologías web constituyen la base para el desarrollo de sistemas de información modernos, ya que permiten que múltiples usuarios accedan a una aplicación desde diferentes dispositivos y ubicaciones geográficas sin necesidad de instalar software adicional. Gracias a ello, las organizaciones pueden optimizar sus procesos, mejorar la gestión de la información y brindar servicios digitales accesibles en cualquier momento.</p>
+                    <p>Las aplicaciones web generalmente están compuestas por tres capas principales: la capa de presentación, encargada de la interfaz visual; la capa de lógica de negocio, responsable del procesamiento de datos y reglas del sistema; y la capa de datos, donde se almacena la información utilizada por la aplicación.</p>
+                    <p>Entre las tecnologías web más utilizadas para el desarrollo de sistemas de información se encuentran:</p>
+                    <ul style="margin-left: 0.5rem; list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>HTML:</strong> Lenguaje estándar para estructurar contenido de páginas web.</li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>CSS:</strong> Lenguaje para definir la apariencia visual y diseño responsivo.</li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>JavaScript:</strong> Lenguaje de programación que permite funcionalidades dinámicas e interactivas.</li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>PHP y Laravel:</strong> Lenguaje de servidor y framework para construir aplicaciones seguras y escalables.</li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>MySQL:</strong> Sistema de gestión de bases de datos relacional ampliamente utilizado.</li>
+                    </ul>
+                    <p>En el presente proyecto, estas tecnologías permitirán desarrollar un sistema de información web capaz de gestionar productos, ventas, compras, consultas y reportes de la Ferretería Belén, proporcionando una plataforma eficiente para la administración de la información.</p>
+                </div>
+            </div>
+
+            <!-- 2.8 Metodología Scrum -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.8. Metodología Scrum</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p>Scrum es una metodología ágil utilizada para la gestión y desarrollo de proyectos de software, caracterizada por su enfoque iterativo e incremental. Su principal objetivo es entregar valor de manera continua mediante ciclos de trabajo cortos llamados Sprint, permitiendo adaptarse rápidamente a los cambios y necesidades del proyecto.</p>
+                    <p>Esta metodología se basa en los principios del Manifiesto Ágil, promoviendo la colaboración entre los integrantes del equipo, la comunicación constante con los usuarios y la entrega frecuente de productos funcionales. Scrum permite dividir proyectos complejos en pequeñas tareas administrables, facilitando la planificación, el seguimiento y la evaluación continua de los avances realizados.</p>
+                    <p>Dentro de Scrum existen tres roles fundamentales:</p>
+                    <ul style="margin-left: 0.5rem; list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Product Owner:</strong> Representa los intereses del cliente y gestiona el Product Backlog.</li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Scrum Master:</strong> Asegura la correcta aplicación de Scrum y elimina obstáculos.</li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Equipo de Desarrollo:</strong> Diseña, programa, prueba e implementa las funcionalidades.</li>
+                    </ul>
+                    <p>Entre las principales ventajas de Scrum se encuentran:</p>
+                    <ul style="margin-left: 0.5rem; list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.3rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Mayor capacidad de adaptación ante cambios.</li>
+                        <li style="margin-bottom: 0.3rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Entrega continua de funcionalidades operativas.</li>
+                        <li style="margin-bottom: 0.3rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Mejor comunicación entre los integrantes.</li>
+                        <li style="margin-bottom: 0.3rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Identificación temprana de errores.</li>
+                        <li style="margin-bottom: 0.3rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Mayor control y seguimiento del avance.</li>
+                        <li style="margin-bottom: 0.3rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-check" style="color: #f39c12; margin-right: 0.5rem;"></i>Incremento de la calidad del producto final.</li>
+                    </ul>
+                    <p>Para el desarrollo del Sistema de Información Web para la Gestión y Consultas de Productos de Construcción de la Ferretería Belén, la metodología Scrum permitirá organizar las actividades en etapas incrementales, facilitando la implementación progresiva de módulos como gestión de productos, ventas, compras, consultas y generación de reportes. Asimismo, permitirá validar continuamente los avances realizados y garantizar que el sistema responda adecuadamente a las necesidades de la ferretería.</p>
+                </div>
+            </div>
+
+            <!-- 2.9 Diagramas de Casos de Uso (UML) -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.9. Diagramas de Casos de Uso (UML)</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p>Los Diagramas de Casos de Uso forman parte del Lenguaje Unificado de Modelado (UML) y permiten representar gráficamente la interacción entre los actores y las funcionalidades del sistema.</p>
+                    <p>En el sistema de la Ferretería Belén, los principales actores son el Administrador y el Cliente. Los casos de uso identificados incluyen iniciar sesión, gestionar productos, gestionar ventas, gestionar compras a proveedores, consultar productos y generar reportes.</p>
+                </div>
+            </div>
+
+            <!-- 2.10 Taxonomía del Sistema -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.10. Taxonomía del Sistema</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <p>Voy a tomar como base la bibliográfica de Ian Sommerville en su obra "Ingeniería de Software" el presente proyecto se clasifica formalmente dentro de las categorías de aplicaciones interactivas basadas en transacciones o compras. La justificación es que según Sommerville, las aplicaciones interactivas basadas en transacciones son aquellos sistemas de software que se ejecutan en una computadora remota y los cuales los usuarios acceden desde sus propias terminales para interactuar con la base de datos centralizada.</p>
+                    <p>El autor destaca que la función principal de estos sistemas es procesar las peticiones de los usuarios para actualizar la información de la base de datos o extraer datos de la misma, siendo algunos ejemplos las aplicaciones de gestión empresarial o comercios electrónicos.</p>
+                </div>
+            </div>
+
+            <!-- 2.11 Glosario Técnico -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.11. Glosario Técnico</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <ul style="margin-left: 0.5rem; list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Inventario:</strong> Conjunto de productos almacenados disponibles para su comercialización.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Stock:</strong> Cantidad existente de un producto dentro del inventario.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Producto:</strong> Artículo de construcción comercializado por la Ferretería Belén.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Proveedor:</strong> Empresa o persona encargada de suministrar productos a la ferretería.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Venta:</strong> Transacción comercial mediante la cual se registra la salida de productos.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Compra:</strong> Proceso de adquisición de productos provenientes de proveedores.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Cliente:</strong> Persona que adquiere productos ofrecidos por la ferretería.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Reporte:</strong> Documento generado por el sistema con información de inventario, ventas o ganancias.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-angle-right" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>Categoría:</strong> Clasificación para organizar los productos dentro del sistema.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2.12 Reglas de Negocio -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>2.12. Reglas de Negocio</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem;">
+                    <ul style="margin-left: 0.5rem; list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-01.</strong> Todo producto registrado debe pertenecer a una categoría existente.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-02.</strong> Todo producto debe estar asociado a un proveedor registrado en el sistema.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-03.</strong> No se podrá realizar una venta si el stock disponible es menor a la cantidad solicitada.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-04.</strong> Cada venta debe actualizar automáticamente el stock del producto.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-05.</strong> Cada compra registrada debe incrementar automáticamente el inventario.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-06.</strong> Solo los usuarios autenticados podrán acceder a las funcionalidades administrativas.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-07.</strong> Los clientes únicamente podrán realizar consultas de productos y disponibilidad.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-08.</strong> El sistema deberá registrar la fecha y hora de cada compra y venta realizada.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-09.</strong> Todo reporte deberá generarse utilizando información almacenada en la base de datos.</li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 2rem; text-indent: -2rem;"><strong style="color: #f39c12;">RN-10.</strong> Los productos con stock igual a cero serán considerados productos agotados.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CAPÍTULO 3: MARCO DE DESARROLLO                                -->
+<!-- ============================================================ -->
+<section id="capitulo3" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Capítulo 3: <span class="gradient-text">Marco de Desarrollo</span></h2>
+            <div class="gradient-line"></div>
+        </div>
+
+        <div class="content-block" style="margin-top: 2rem; color: #e2e8f0; line-height: 1.8;">
+
+            <!-- 3.1 Ingeniería de Requisitos -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>3.1. Ingeniería de Requisitos</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>3.1.1. Especificación de Requisitos</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <p style="margin-bottom: 1.5rem;">La especificación de requisitos permite identificar y documentar las necesidades del sistema, describiendo las funciones que deberá realizar y las condiciones de calidad que deberá cumplir. Estos requisitos sirven como base para el diseño, desarrollo y validación del sistema web de la ferretería “Belén”.</p>
+
+                    <div class="accordion-h4" style="margin-left: 1rem;">
+                        <button class="accordion-btn" onclick="toggleAccordion(this)">
+                            <span>3.1.1.1. Requisitos Funcionales (RF)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p style="margin-bottom: 1rem;">Los requisitos funcionales describen las funciones y procesos que el sistema debe ejecutar para satisfacer las necesidades del usuario. Estos requisitos definen las operaciones principales del sistema, como el registro de productos, control de ventas, consultas y generación de reportes.</p>
+                        <div class="table-wrapper" style="margin-bottom: 2rem;">
+                            <table class="styled-table" style="width: 100%; border-collapse: collapse;">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Hallazgo (Dato)</th>
+                                        <th>Requisito Funcional Redactado</th>
+                                        <th>Clasificación</th>
+                                        <th>Prioridad MoSCoW</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>RF-01</strong></td>
+                                        <td>“El administrador necesita registrar rápidamente los productos de construcción para mantener actualizado el inventario”.</td>
+                                        <td>El sistema debe permitir registrar productos mediante formularios web para almacenar información de nombre, categoría, precio, stock y proveedor.</td>
+                                        <td>Gestión de inventario</td>
+                                        <td><span class="moscow" style="background-color: #e74c3c; padding: 0.2rem 0.5rem; border-radius: 4px; color: white; font-weight: bold;">M (Must)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>RF-02</strong></td>
+                                        <td>“El encargado de ventas necesita actualizar automáticamente el stock después de cada venta”.</td>
+                                        <td>El sistema debe actualizar automáticamente el inventario cuando se registre una venta para mantener información correcta del stock disponible.</td>
+                                        <td>Control de inventario</td>
+                                        <td><span class="moscow" style="background-color: #e74c3c; padding: 0.2rem 0.5rem; border-radius: 4px; color: white; font-weight: bold;">M (Must)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>RF-03</strong></td>
+                                        <td>“Los clientes quieren buscar productos de forma rápida por nombre o categoría”.</td>
+                                        <td>El sistema debe permitir buscar productos mediante filtros por nombre, categoría o disponibilidad para facilitar la consulta de productos.</td>
+                                        <td>Consulta y búsqueda</td>
+                                        <td><span class="moscow" style="background-color: #f39c12; padding: 0.2rem 0.5rem; border-radius: 4px; color: #0f172a; font-weight: bold;">S (Should)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>RF-04</strong></td>
+                                        <td>“El administrador desea generar reportes de ventas y ganancias mensuales”.</td>
+                                        <td>El sistema debe generar reportes de ventas e inventario utilizando la información almacenada en la base de datos para apoyar la toma de decisiones.</td>
+                                        <td>Reportes administrativos</td>
+                                        <td><span class="moscow" style="background-color: #f39c12; padding: 0.2rem 0.5rem; border-radius: 4px; color: #0f172a; font-weight: bold;">S (Should)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>RF-05</strong></td>
+                                        <td>“El administrador necesita registrar compras realizadas a proveedores”.</td>
+                                        <td>El sistema debe registrar compras a proveedores mediante formularios de adquisición para actualizar automáticamente el stock del inventario.</td>
+                                        <td>Gestión de compras</td>
+                                        <td><span class="moscow" style="background-color: #e74c3c; padding: 0.2rem 0.5rem; border-radius: 4px; color: white; font-weight: bold;">M (Must)</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="accordion-h4" style="margin-left: 1rem;">
+                        <button class="accordion-btn" onclick="toggleAccordion(this)">
+                            <span>3.1.1.2. Requerimientos No Funcionales (RNF)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p style="margin-bottom: 1rem; padding-top: 0.5rem;">Los requerimientos no funcionales describen las características de calidad y restricciones técnicas que debe cumplir el sistema. Estos requisitos garantizan aspectos como seguridad, compatibilidad, rendimiento y usabilidad, asegurando un funcionamiento eficiente y confiable del sistema web.</p>
+                        <div class="table-wrapper">
+                            <table class="styled-table" style="width: 100%; border-collapse: collapse;">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Hallazgo (Dato)</th>
+                                        <th>Requisito No Funcional Redactado</th>
+                                        <th>Tipo de Calidad</th>
+                                        <th>Prioridad MoSCoW</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>RNF-01</strong></td>
+                                        <td>“Los usuarios quieren que la información del sistema esté protegida contra accesos no autorizados”.</td>
+                                        <td>El acceso al sistema deberá estar protegido mediante autenticación de usuarios y contraseñas para garantizar la seguridad de la información.</td>
+                                        <td>Seguridad</td>
+                                        <td><span class="moscow" style="background-color: #e74c3c; padding: 0.2rem 0.5rem; border-radius: 4px; color: white; font-weight: bold;">M (Must)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>RNF-02</strong></td>
+                                        <td>“El administrador necesita que el sistema funcione correctamente en computadoras y navegadores actuales”.</td>
+                                        <td>La interfaz del sistema deberá ser compatible con navegadores web modernos para garantizar accesibilidad y usabilidad.</td>
+                                        <td>Compatibilidad y usabilidad</td>
+                                        <td><span class="moscow" style="background-color: #f39c12; padding: 0.2rem 0.5rem; border-radius: 4px; color: #0f172a; font-weight: bold;">S (Should)</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>3.1.2. Priorización</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 1.5rem;">
+                        <p style="margin-bottom: 1rem;">El Producto Mínimo Viable (MVP) del Sistema de Información Web para la Ferretería Belén estará conformado por los requisitos clasificados como Must Have:</p>
+                        <ul style="margin-left: 0.5rem; list-style: none; padding-left: 0; margin-bottom: 1rem;">
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-star" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>RF-01:</strong> Gestión de Productos.</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-star" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>RF-02:</strong> Actualización automática de inventario por ventas.</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem;"><i class="fas fa-star" style="color: #f39c12; margin-right: 0.5rem;"></i><strong>RF-05:</strong> Gestión de Compras a Proveedores.</li>
+                        </ul>
+                        <p style="margin-bottom: 1rem;">Estas funcionalidades permiten administrar el inventario, registrar movimientos de entrada y salida de productos y mantener actualizado el stock en tiempo real, resolviendo el problema principal identificado en la organización.</p>
+                        <p>Los requisitos RF-03 y RF-04 se consideran mejoras de segunda prioridad para versiones posteriores del sistema, ya que complementan la funcionalidad principal mediante consultas avanzadas y generación de reportes administrativos.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-h4" id="punto313">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>3.1.3. Matriz de Trazabilidad (RTM)</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="table-wrapper" style="margin-bottom: 2rem;">
+                        <table class="styled-table" style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr>
+                                    <th>Objetivo Específico</th>
+                                    <th>Requisito Funcional (RF)</th>
+                                    <th>Caso de Uso</th>
+                                    <th>Entidad del DER</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Implementar un módulo de gestión de productos que permita almacenar y gestionar información detallada como nombre, categoría, precio, stock y proveedor.</td>
+                                    <td><strong>RF-01:</strong> El sistema debe permitir registrar productos mediante formularios web para almacenar información de nombre, categoría, precio, stock y proveedor.</td>
+                                    <td>Gestión de Productos</td>
+                                    <td>Productos, Categorías, Proveedores, Lote_productos</td>
+                                </tr>
+                                <tr>
+                                    <td>Implementar un módulo de gestión de productos que permita almacenar y gestionar información detallada como nombre, categoría, precio, stock y proveedor.</td>
+                                    <td><strong>RF-02:</strong> El sistema debe actualizar automáticamente el inventario cuando se registre una venta.</td>
+                                    <td>Gestión de Productos</td>
+                                    <td>Productos, Venta_productos</td>
+                                </tr>
+                                <tr>
+                                    <td>Diseñar una interfaz web accesible para los clientes, que permita visualizar de forma clara y ordenada los productos disponibles en venta.</td>
+                                    <td><strong>RF-03:</strong> El sistema debe permitir buscar productos mediante filtros por nombre, categoría o disponibilidad.</td>
+                                    <td>Consulta de Productos</td>
+                                    <td>Productos, Categorías</td>
+                                </tr>
+                                <tr>
+                                    <td>Diseñar una interfaz web accesible para los clientes, que permita visualizar de forma clara y ordenada los productos disponibles en venta.</td>
+                                    <td><strong>RF-03:</strong> El sistema debe permitir consultar productos disponibles en stock.</td>
+                                    <td>Consulta de Productos</td>
+                                    <td>Productos</td>
+                                </tr>
+                                <tr>
+                                    <td>Crear un módulo de control de ventas que registre las transacciones realizadas, incluyendo fecha, productos vendidos, cantidad y total de la venta.</td>
+                                    <td><strong>RF-02:</strong> El sistema debe actualizar automáticamente el inventario cuando se registre una venta.</td>
+                                    <td>Gestión de Ventas</td>
+                                    <td>Ventas, Venta_productos, Productos, Clientes</td>
+                                </tr>
+                                <tr>
+                                    <td>Crear un módulo de control de ventas que registre las transacciones realizadas, incluyendo fecha, productos vendidos, cantidad y total de la venta.</td>
+                                    <td><strong>RF-04:</strong> El sistema debe generar reportes de ventas e inventario utilizando la información almacenada en la base de datos.</td>
+                                    <td>Generación de Reportes</td>
+                                    <td>Ventas, Venta_productos, Productos</td>
+                                </tr>
+                                <tr>
+                                    <td>Diseñar un módulo de compras a proveedores que permita registrar adquisiciones y actualizar el stock.</td>
+                                    <td><strong>RF-05:</strong> El sistema debe registrar compras a proveedores mediante formularios de adquisición para actualizar automáticamente el stock del inventario.</td>
+                                    <td>Gestión de Compra Proveedores</td>
+                                    <td>Compras, Compra_productos, Proveedores, Productos</td>
+                                </tr>
+                                <tr>
+                                    <td>Generar reportes automatizados de inventario, ventas y ganancias para apoyar la toma de decisiones.</td>
+                                    <td><strong>RF-04:</strong> El sistema debe generar reportes de ventas, inventario y ganancias.</td>
+                                    <td>Generación de Reportes</td>
+                                    <td>Ventas, Compras, Productos, Compra_productos, Venta_productos</td>
+                                </tr>
+                                <tr>
+                                    <td>Implementar un sistema de autenticación y control de accesos mediante roles de usuario y validación de credenciales.</td>
+                                    <td><strong>RF-06:</strong> El sistema debe permitir autenticación de usuarios y control de accesos según roles.</td>
+                                    <td>Iniciar Sesión</td>
+                                    <td>Usuarios, Empleados</td>
+                                </tr>
+                                <tr>
+                                    <td>Automatizar la actualización del stock de productos mediante procesos sincronizados de compras y ventas.</td>
+                                    <td><strong>RF-02:</strong> El sistema debe actualizar automáticamente el stock tras ventas.<br><br><strong>RF-05:</strong> El sistema debe actualizar automáticamente el stock tras compras.</td>
+                                    <td>Gestión de Ventas / Gestión de Compra Proveedores</td>
+                                    <td>Productos, Venta_productos, Compra_productos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3.2 Modelado de Comportamiento y Datos -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>3.2. Modelado de Comportamiento y Datos</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>3.2.1. Diagrama UML Caso de Uso</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <!-- General -->
+                    <div class="glass-card" style="text-align: center; margin-bottom: 2.5rem; padding: 2rem;">
+                        <h5 style="color: #f39c12; margin-bottom: 1.5rem; font-size: 1.2rem;"><i class="fas fa-sitemap" style="margin-right: 0.5rem;"></i>Diagrama de Casos de Uso General</h5>
+                        <img src="../assets/img/CASO DE USO GENERAL.png" alt="Diagrama de Casos de Uso General" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    </div>
+
+                    <!-- Específicos -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                        <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                            <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-project-diagram" style="color: #f39c12; margin-right: 0.5rem;"></i>Caso de Uso 1</h5>
+                            <img src="../assets/img/CASO DE USO 1.png" alt="Caso de Uso 1" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        </div>
+                        <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                            <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-project-diagram" style="color: #f39c12; margin-right: 0.5rem;"></i>Caso de Uso 2</h5>
+                            <img src="../assets/img/CASO DE USO 2.png" alt="Caso de Uso 2" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        </div>
+                        <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                            <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-project-diagram" style="color: #f39c12; margin-right: 0.5rem;"></i>Caso de Uso 3</h5>
+                            <img src="../assets/img/CASO DE USO 3.png" alt="Caso de Uso 3" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        </div>
+                        <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                            <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-project-diagram" style="color: #f39c12; margin-right: 0.5rem;"></i>Caso de Uso 4</h5>
+                            <img src="../assets/img/CASO DE USO 4.png" alt="Caso de Uso 4" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        </div>
+                        <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                            <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-project-diagram" style="color: #f39c12; margin-right: 0.5rem;"></i>Caso de Uso 5</h5>
+                            <img src="../assets/img/CASO DE USO 5.png" alt="Caso de Uso 5" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        </div>
+                        <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                            <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-project-diagram" style="color: #f39c12; margin-right: 0.5rem;"></i>Caso de Uso 6</h5>
+                            <img src="../assets/img/CASO DE USO 6.png" alt="Caso de Uso 6" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        </div>
+                    </div>
+
+                    <!-- Diagramas de Secuencia -->
+                    <div class="accordion-h4" style="margin-left: 1rem;">
+                        <button class="accordion-btn" onclick="toggleAccordion(this)">
+                            <span>3.2.1.1. Diagrama de Secuencia</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                            <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                                <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-random" style="color: #f39c12; margin-right: 0.5rem;"></i>Login</h5>
+                                <img src="../assets/img/DIAGRAMA DE SECUENCIA LOGIN.png" alt="Secuencia Login" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                            </div>
+                            <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                                <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-random" style="color: #f39c12; margin-right: 0.5rem;"></i>Gestión de Productos</h5>
+                                <img src="../assets/img/DIAGRAMA DE SECUENCIA GESTION DE PERODUCTOS.png" alt="Secuencia Productos" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                            </div>
+                            <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                                <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-random" style="color: #f39c12; margin-right: 0.5rem;"></i>Gestión de Ventas</h5>
+                                <img src="../assets/img/DIAGRAMA DE SECUENCIA GESTION DE VENTAS.png" alt="Secuencia Ventas" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                            </div>
+                            <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                                <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-random" style="color: #f39c12; margin-right: 0.5rem;"></i>Gestión Compras Proveedores</h5>
+                                <img src="../assets/img/DIAGRAMA DE SECUENCIA GESTION DE COMPRAS PROVEEDORES.png" alt="Secuencia Compras" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                            </div>
+                            <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                                <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-random" style="color: #f39c12; margin-right: 0.5rem;"></i>Consulta de Productos</h5>
+                                <img src="../assets/img/DIAGRAMA DE SECUENCIA CONSULTA DE PRODUCTOS.png" alt="Secuencia Consultas" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                            </div>
+                            <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                                <h5 style="color: #e2e8f0; margin-bottom: 1rem;"><i class="fas fa-random" style="color: #f39c12; margin-right: 0.5rem;"></i>Generación de Reportes</h5>
+                                <img src="../assets/img/DIAGRAMA DE SECUENCIA GENERACION DE REPORTES.png" alt="Secuencia Reportes" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diagrama de Clases -->
+                    <div class="accordion-h4" style="margin-left: 1rem;">
+                        <button class="accordion-btn" onclick="toggleAccordion(this)">
+                            <span>3.2.1.2. Diagrama de Clases</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="glass-card" style="text-align: center; margin-bottom: 2rem; padding: 2rem;">
+                            <h5 style="color: #f39c12; margin-bottom: 1.5rem; font-size: 1.2rem;"><i class="fas fa-random" style="margin-right: 0.5rem;"></i>Diagrama de Clases</h5>
+                            <img src="../assets/img/DIAGRAMA DE SECUENCIA.png" alt="Diagrama de Clases" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3.2.2 Escenario de Éxito -->
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>3.2.2. Escenario de Éxito (Caso de Uso Principal)</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="table-wrapper" style="margin-bottom: 2rem;">
+                        <table class="styled-table" style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr>
+                                    <th>Elemento</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Caso de Uso</strong></td>
+                                    <td>Registrar Venta</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Actor Principal</strong></td>
+                                    <td>Administrador</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Objetivo</strong></td>
+                                    <td>Registrar la venta de productos y actualizar automáticamente el inventario</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Precondición</strong></td>
+                                    <td>El administrador debe haber iniciado sesión en el sistema</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Postcondición</strong></td>
+                                    <td>La venta queda almacenada y el stock actualizado correctamente</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Flujo principal</strong></td>
+                                    <td>
+                                        <ol style="margin-left: 1rem; padding-left: 1rem; line-height: 1.8; margin-bottom: 0;">
+                                            <li>El administrador accede al módulo de ventas.</li>
+                                            <li>El sistema muestra el formulario de registro de ventas.</li>
+                                            <li>El administrador selecciona los productos solicitados.</li>
+                                            <li>El administrador registra la cantidad de cada producto.</li>
+                                            <li>El sistema calcula automáticamente el monto total.</li>
+                                            <li>El administrador confirma la transacción.</li>
+                                            <li>El sistema registra la venta.</li>
+                                            <li>El sistema actualiza automáticamente el stock disponible.</li>
+                                            <li>El sistema genera el comprobante de venta.</li>
+                                            <li>El sistema muestra el mensaje de confirmación de venta exitosa.</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 3.2.3 Diagrama Entidad-Relación (DER) -->
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>3.2.3. Diagrama Entidad-Relación (DER)</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 2rem; margin-top:0.5rem;">
+                        <p style="margin-bottom: 1rem;">El Diagrama Entidad-Relación representa la estructura lógica de la base de datos del Sistema de Información Web para la Ferretería Belén. El modelo está compuesto por las entidades Usuario, Cliente, Empleado, Proveedor, Categoría, Producto, Compra, DetalleCompra, Venta y DetalleVenta, las cuales permiten gestionar los procesos de inventario, compras y ventas.</p>
+                        <p style="margin-bottom: 2rem;">Las relaciones establecidas garantizan la integridad referencial mediante claves primarias (PK) y claves foráneas (FK), permitiendo controlar adecuadamente los movimientos de productos y las operaciones comerciales realizadas dentro del sistema.</p>
+                        <div style="text-align: center;">
+                            <img src="../assets/img/Diagrama Entidad Relacion.png" alt="Diagrama Entidad-Relación (DER)" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
+
+                    <!-- 3.2.3.1 DER Refinado (nuevo) -->
+                    <div class="accordion-h4" style="margin-left: 1rem;">
+                        <button class="accordion-btn" onclick="toggleAccordion(this)">
+                            <span>3.2.3.1. Diagrama Entidad-Relación Refinado</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="glass-card" style="margin-bottom: 2rem; text-align: center;">
+                            <img src="../assets/img/Diagrama Entidad Relacion Refinado.png" alt="Diagrama Entidad-Relación Refinado" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
+
+                    <!-- 3.2.3.2 Modelo Relacional (nuevo) -->
+                    <div class="accordion-h4" style="margin-left: 1rem;">
+                        <button class="accordion-btn" onclick="toggleAccordion(this)">
+                            <span>3.2.3.2. Modelo Relacional</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="glass-card" style="margin-bottom: 2rem; text-align: center;">
+                            <img src="../assets/img/Diagrama Entidad-Relación (DER).jpg" alt="Modelo Relacional" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3.2.4 Diccionario de Datos (ya existía, se renombra a 3.2.4) -->
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>3.2.4. Diccionario de Datos</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <!-- Se mantiene el mismo contenido del diccionario que ya estaba en el HTML -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                        <!-- Usuarios -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Usuarios</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_usuario</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>CI_emp</td><td>INT(11)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>Nom_usu</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>Contrasena_usu</td><td>VARCHAR(45)</td><td></td></tr>
+                                        <tr><td>Ultimo_ingreso_usu</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Clientes -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Clientes</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>CI_cli</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>Nombre_cli</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>Apellidos_cli</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>Num_contacto_cli</td><td>INT(11)</td><td></td></tr>
+                                        <tr><td>Fecha_registro_cli</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Empleados -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Empleados</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>CI_emp</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>Nombre_emp</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Paterno_emp</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Materno_emp</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Cargo_emp</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Ciudad_Dep_emp</td><td>VARCHAR(50)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>Zona_emp</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Calle_Av_emp</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Numero_exterior_emp</td><td>CHAR(10)</td><td></td></tr>
+                                        <tr><td>Num_contacto_emp</td><td>INT(11)</td><td></td></tr>
+                                        <tr><td>Correo_electronico_emp</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>Fecha_inicio_emp</td><td>DATETIME</td><td></td></tr>
+                                        <tr><td>Fecha_retiro_emp</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- ciudad_dep_emp -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: ciudad_dep_emp</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_Ciudad_Dep_emp</td><td>VARCHAR(50)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>nombre_Cie</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>descripcion</td><td>VARCHAR(100)</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Ventas -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Ventas</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_venta</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>CI_cli</td><td>INT(11)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>CI_emp</td><td>INT(11)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>Monto_total_venta</td><td>DECIMAL(15,2)</td><td></td></tr>
+                                        <tr><td>Obs_venta</td><td>VARCHAR(255)</td><td></td></tr>
+                                        <tr><td>Fecha_venta</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Venta_productos -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Venta_productos</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_venta_prod</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>id_venta</td><td>INT(11)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>Cant_prod_vent</td><td>INT(11)</td><td></td></tr>
+                                        <tr><td>Descuento_por_prod</td><td>DECIMAL(15,2)</td><td></td></tr>
+                                        <tr><td>Fecha_registro_vent_prod</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Compra_productos -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Compra_productos</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_compra_prod</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>id_Lote</td><td>INT(11)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>Cant_prod_comp</td><td>INT(11)</td><td></td></tr>
+                                        <tr><td>Precio_unit_comp</td><td>DECIMAL(15,2)</td><td></td></tr>
+                                        <tr><td>Fecha_registro_comp_prod</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Compras -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Compras</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_compra</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>id_proveedor</td><td>INT(11)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>Monto_total_compra</td><td>DECIMAL(15,2)</td><td></td></tr>
+                                        <tr><td>Obs_compra</td><td>VARCHAR(255)</td><td></td></tr>
+                                        <tr><td>Fecha_compra</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Proveedores -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Proveedores</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_proveedor</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>Razon_Social</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>Nombre_encargado</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>Paterno_encargado</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Materno_encargado</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Num_proveedor</td><td>INT(11)</td><td></td></tr>
+                                        <tr><td>Num_contacto_prov</td><td>INT(11)</td><td></td></tr>
+                                        <tr><td>Ciudad_Dep_prov</td><td>VARCHAR(50)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>Calle_Av_prov</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Numero_exterior_prov</td><td>CHAR(10)</td><td></td></tr>
+                                        <tr><td>Correo_electronico_prov</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>Fecha_registro_prov</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- ciudad_dep_prov -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: ciudad_dep_prov</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_Ciudad_Dep_prov</td><td>VARCHAR(50)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>nombre_Cip</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>descripcion</td><td>VARCHAR(100)</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Lote_productos -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Lote_productos</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_Lote</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>id_producto</td><td>INT(11)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>Presentacion</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>Precio_unitario_prod</td><td>DECIMAL(15,2)</td><td></td></tr>
+                                        <tr><td>Cantidad_presentacion</td><td>INT(11)</td><td></td></tr>
+                                        <tr><td>Fecha_ingreso_lote</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Productos -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Productos</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_producto</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>id_categoria</td><td>INT(11)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>nombre_prod</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>unidad_medida</td><td>VARCHAR(50)</td><td><strong>FK</strong></td></tr>
+                                        <tr><td>Stock_Total_prod</td><td>INT(11)</td><td></td></tr>
+                                        <tr><td>Fecha_registro_prod</td><td>DATETIME</td><td></td></tr>
+                                        <tr><td>Fecha_ultima_modificacion_prod</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Categorias -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Categorias</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_categoria</td><td>INT(11)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>Nombre_cat</td><td>VARCHAR(100)</td><td></td></tr>
+                                        <tr><td>Descripcion_cat</td><td>VARCHAR(255)</td><td></td></tr>
+                                        <tr><td>Estado_cat</td><td>CHAR(3)</td><td></td></tr>
+                                        <tr><td>Fecha_registro_cat</td><td>DATETIME</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Unidades_medida -->
+                        <div class="glass-card">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;">Tabla: Unidades_medida</h5>
+                            <div class="table-wrapper">
+                                <table class="styled-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                    <thead><tr><th>Nombre del Campo</th><th>Tipo</th><th>PK/FK</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>id_Unidad_medida</td><td>VARCHAR(50)</td><td><strong>PK</strong></td></tr>
+                                        <tr><td>Nombre</td><td>VARCHAR(50)</td><td></td></tr>
+                                        <tr><td>Descripcion</td><td>VARCHAR(100)</td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3.3 Arquitectura y UI -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>3.3. Arquitectura de Software y Diseño UX</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>3.3.1. Diagrama de Arquitectura en Capas</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 2rem; margin-top:0.5rem;">
+                        <p style="margin-bottom: 2rem;">El diagrama de arquitectura en capas representa la estructura tecnológica del sistema web, mostrando cómo se distribuyen y relacionan sus componentes principales. Este modelo organiza el sistema en diferentes niveles, permitiendo separar responsabilidades y mejorar la administración del software.</p>
+                        <div style="text-align: center; margin-bottom: 2.5rem;">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;"><i class="fas fa-layer-group" style="margin-right: 0.5rem;"></i>Diagrama de Arquitectura en Capas 1</h5>
+                            <img src="../assets/img/Arquitectura de capas1.png" alt="Diagrama de Arquitectura en Capas 1" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+                        </div>
+                        <div style="text-align: center;">
+                            <h5 style="color: #f39c12; margin-bottom: 1rem;"><i class="fas fa-layer-group" style="margin-right: 0.5rem;"></i>Diagrama de Arquitectura en Capas 2</h5>
+                            <img src="../assets/img/Arquitectura de capas 2.png" alt="Diagrama de Arquitectura en Capas 2" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-h4">
+                    <button class="accordion-btn" onclick="toggleAccordion(this)">
+                        <span>3.3.2. Wireframes / Prototipo</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="glass-card" style="margin-bottom: 2rem; margin-top:0.5rem;">
+                        <p>Los wireframes representan el diseño preliminar de las interfaces del sistema web, mostrando la distribución de elementos visuales, botones, formularios y opciones de navegación que tendrá cada pantalla. Estos diseños permiten visualizar de manera anticipada la interacción entre el usuario y el sistema antes de iniciar el desarrollo de la interfaz definitiva.</p>
+                        <p style="margin-top: 1rem;">Asimismo, los wireframes ayudan a identificar mejoras en la organización de la información, facilitando una experiencia de usuario más clara, intuitiva y accesible. Cada wireframe está relacionado con un caso de uso específico del sistema, permitiendo representar gráficamente las funcionalidades principales de cada módulo.</p>
+                    </div>
+
+                    <!-- Login -->
+                    <div class="glass-card" style="text-align: center; margin-bottom: 2rem;">
+                        <h5 style="color: #f39c12; margin-bottom: 1rem;"><i class="fas fa-sign-in-alt" style="margin-right: 0.5rem;"></i>Wireframe 1: Login / Iniciar Sesión</h5>
+                        <img src="../assets/img/login.png" alt="Wireframe Login" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+                    </div>
+                    <!-- Gestión de Productos -->
+                    <div class="glass-card" style="text-align: center; margin-bottom: 2rem;">
+                        <h5 style="color: #f39c12; margin-bottom: 1rem;"><i class="fas fa-boxes" style="margin-right: 0.5rem;"></i>Wireframe 2: Gestión de Productos</h5>
+                        <img src="../assets/img/Gestion de Productos.png" alt="Wireframe Gestión de Productos" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+                    </div>
+                    <!-- Gestión de Ventas -->
+                    <div class="glass-card" style="text-align: center; margin-bottom: 2rem;">
+                        <h5 style="color: #f39c12; margin-bottom: 1rem;"><i class="fas fa-cash-register" style="margin-right: 0.5rem;"></i>Wireframe 3: Gestión de Ventas</h5>
+                        <img src="../assets/img/Gestion de Ventas.png" alt="Wireframe Gestión de Ventas" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+                    </div>
+                    <!-- Gestión de Compras a Proveedores -->
+                    <div class="glass-card" style="text-align: center; margin-bottom: 2rem;">
+                        <h5 style="color: #f39c12; margin-bottom: 1rem;"><i class="fas fa-truck" style="margin-right: 0.5rem;"></i>Wireframe 4: Gestión de Compras a Proveedores</h5>
+                        <img src="../assets/img/Gestión de Compras a Proveedores.png" alt="Wireframe Gestión de Compras a Proveedores" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+                    </div>
+                    <!-- Consulta de Productos -->
+                    <div class="glass-card" style="text-align: center; margin-bottom: 2rem;">
+                        <h5 style="color: #f39c12; margin-bottom: 1rem;"><i class="fas fa-search" style="margin-right: 0.5rem;"></i>Wireframe 5: Consulta de Productos</h5>
+                        <img src="../assets/img/Consulta de Productos.png" alt="Wireframe Consulta de Productos" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+                    </div>
+                    <!-- Reportes -->
+                    <div class="glass-card" style="text-align: center; margin-bottom: 2rem;">
+                        <h5 style="color: #f39c12; margin-bottom: 1rem;"><i class="fas fa-chart-bar" style="margin-right: 0.5rem;"></i>Wireframe 6: Reportes</h5>
+                        <img src="../assets/img/Reportes.png" alt="Wireframe Reportes" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3.4 Despliegue de la Interfaz con GitHub Pages (nuevo) -->
+            <div class="accordion-h3">
+                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                    <span>3.4. Despliegue de la Interfaz con GitHub Pages</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="glass-card" style="margin-bottom: 1.5rem; margin-top:0.5rem; text-align: center;">
+                    <p style="margin-bottom: 1rem;">El prototipo de la interfaz del sistema ha sido desplegado utilizando GitHub Pages, permitiendo acceder a la versión estática del diseño desde cualquier navegador.</p>
+                    <p style="font-size: 1.2rem;">
+                        <i class="fas fa-link" style="color: #f39c12; margin-right: 0.5rem;"></i>
+                        <a href="https://4brayan10.github.io/landing-page-ferreteria1/" target="_blank" style="color: #f39c12; text-decoration: underline; font-weight: 600;">
+                            https://4brayan10.github.io/landing-page-ferreteria1/
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CAPÍTULO 4: SUSTENTO BIBLIOGRÁFICO                            -->
+<!-- ============================================================ -->
+<section id="capitulo4" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Capítulo 4: <span class="gradient-text">Sustento Bibliográfico</span></h2>
+            <div class="gradient-line"></div>
+        </div>
+
+        <div class="content-block" style="margin-top: 2rem; color: #e2e8f0; line-height: 1.8;">
+            <div class="glass-card" style="padding: 1.5rem;">
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem;">
+                        <i class="fas fa-book" style="color: #f39c12; margin-right: 0.5rem;"></i>
+                        <strong>Wikipedia contributors.</strong> (2026, March 4). <em>Ian Sommerville (software engineer)</em>.
+                        <a href="https://en.wikipedia.org/wiki/Ian_Sommerville_(software_engineer)" target="_blank" style="color: #f39c12; text-decoration: none;">https://en.wikipedia.org/wiki/Ian_Sommerville_(software_engineer)</a>
+                    </li>
+                    <li style="margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem;">
+                        <i class="fas fa-book" style="color: #f39c12; margin-right: 0.5rem;"></i>
+                        <strong>Wikipedia contributors.</strong> (2026, March 13). <em>Software engineering</em>. Wikipedia.
+                        <a href="https://en.wikipedia.org/wiki/Software_engineering" target="_blank" style="color: #f39c12; text-decoration: none;">https://en.wikipedia.org/wiki/Software_engineering</a>
+                    </li>
+                    <li style="margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem;">
+                        <i class="fas fa-book" style="color: #f39c12; margin-right: 0.5rem;"></i>
+                        <strong>Sommerville, I.</strong> (2011). <em>Ingeniería de software</em> (9.ª ed.). Addison-Wesley.
+                        <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" target="_blank" style="color: #f39c12; text-decoration: none;">https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf</a>
+                    </li>
+                    <li style="margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem;">
+                        <i class="fas fa-globe" style="color: #f39c12; margin-right: 0.5rem;"></i>
+                        <strong>Camila, & Camila.</strong> (2025, January 8). <em>Sistema web: Qué es y sus características</em>. Data Trust Perú.
+                        <a href="https://www.datatrust.pe/web/sistema-web/" target="_blank" style="color: #f39c12; text-decoration: none;">https://www.datatrust.pe/web/sistema-web/</a>
+                    </li>
+                    <li style="margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem;">
+                        <i class="fas fa-globe" style="color: #f39c12; margin-right: 0.5rem;"></i>
+                        <strong>Keilyn, R. P., & Rodrigo, R. L.</strong> (s.f.). <em>El web como sistema de información</em>.
+                        <a href="http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S1024-94352006000100008" target="_blank" style="color: #f39c12; text-decoration: none;">http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S1024-94352006000100008</a>
+                    </li>
+                    <li style="margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem;">
+                        <i class="fas fa-globe" style="color: #f39c12; margin-right: 0.5rem;"></i>
+                        <strong>Equipo editorial, Etecé.</strong> (2025, January 27). <em>Gestión - Qué es, proceso, niveles y rol del gestor</em>. Concepto.
+                        <a href="https://concepto.de/gestion/" target="_blank" style="color: #f39c12; text-decoration: none;">https://concepto.de/gestion/</a>
+                    </li>
+                    <li style="margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem;">
+                        <i class="fas fa-globe" style="color: #f39c12; margin-right: 0.5rem;"></i>
+                        <strong>Procore.</strong> (s.f.). <em>¿Qué es la gestión de la construcción?</em>
+                        <a href="https://www.procore.com/es/articulo/que-es-la-gestion-de-la-construccion" target="_blank" style="color: #f39c12; text-decoration: none;">https://www.procore.com/es/articulo/que-es-la-gestion-de-la-construccion</a>
+                    </li>
+                    <li style="margin-bottom: 1.2rem; padding-left: 2rem; text-indent: -2rem;">
+                        <i class="fas fa-globe" style="color: #f39c12; margin-right: 0.5rem;"></i>
+                        <strong>Colaboradores de Wikipedia.</strong> (2026, April 4). <em>Base de datos</em>. Wikipedia, La Enciclopedia Libre.
+                        <a href="https://es.wikipedia.org/wiki/Base_de_datos" target="_blank" style="color: #f39c12; text-decoration: none;">https://es.wikipedia.org/wiki/Base_de_datos</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>🚀 Hito 5: Integración y Despliegue - Modelado a producción real.</p>
+        <p style="margin-top: 0.5rem;">© 2026 Ferretería Belén · Sistema de Información Web</p>
+    </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+function toggleAccordion(btn) {
+    var icon = btn.querySelector('.accordion-icon');
+    var content = btn.closest('.accordion-h3, .accordion-h4').nextElementSibling;
+    if (!content || !content.classList.contains('accordion-content')) return;
+    var isOpen = content.classList.contains('open');
+    if (isOpen) {
+        content.style.maxHeight = '0px';
+        content.classList.remove('open');
+        icon.classList.remove('open');
+    } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.classList.add('open');
+        icon.classList.add('open');
+        var parent = content.parentElement;
+        while (parent) {
+            if (parent.classList && parent.classList.contains('accordion-content') && parent.classList.contains('open')) {
+                parent.style.maxHeight = parent.scrollHeight + content.scrollHeight + 'px';
+            }
+            parent = parent.parentElement;
+        }
+    }
+}
+
+function openAndScrollTo(e, targetId) {
+    e.preventDefault();
+    var target = document.getElementById(targetId);
+    if (!target) return;
+
+    // Find closed parent accordions and open them top-down
+    var elementsToOpen = [];
+    var parent = target.parentElement;
+    while (parent) {
+        if (parent.classList && parent.classList.contains('accordion-content')) {
+            if (!parent.classList.contains('open')) {
+                var prev = parent.previousElementSibling;
+                if (prev) {
+                    var btn = prev.querySelector('.accordion-btn');
+                    if (btn) elementsToOpen.unshift(btn);
+                }
+            }
+        }
+        parent = parent.parentElement;
+    }
+    
+    elementsToOpen.forEach(function(btn) {
+        toggleAccordion(btn);
+    });
+
+    // Open target if closed
+    var targetContent = target.nextElementSibling;
+    if (targetContent && targetContent.classList.contains('accordion-content') && !targetContent.classList.contains('open')) {
+        var targetBtn = target.querySelector('.accordion-btn');
+        if (targetBtn) toggleAccordion(targetBtn);
+    }
+
+    // Scroll with offset for sticky header
+    setTimeout(function() {
+        var offset = 120;
+        var elementPosition = target.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - offset;
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
+    }, 300);
+}
+</script>
+</body>
+</html>

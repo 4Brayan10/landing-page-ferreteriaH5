@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricidad | Ferretería Belén</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/store.css">
+    <style>
+        /* Tarjetas verticales para imágenes de producto */
+        .cat-product-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.2rem;
+            border: 1px solid #eee;
+            transition: 0.3s;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cat-product-card:hover {
+            transform: translateY(-5px);
+            border-color: #f1c40f;
+            box-shadow: 0 12px 25px rgba(241,196,15,0.15);
+        }
+        /* Contenedor de imagen / ícono */
+        .prod-img-box {
+            width: 100%;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f8f9fa;
+        }
+        .prod-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .prod-img-box i {
+            font-size: 4rem;
+            color: #f1c40f;
+        }
+        .cat-prod-name { font-size: 1rem; font-weight: 700; color: #2c3e50; margin-bottom: 0.3rem; }
+        .cat-prod-desc { font-size: 0.82rem; color: #7f8c8d; margin-bottom: 0.8rem; min-height: 35px; }
+        .cat-prod-price { font-size: 1.3rem; font-weight: 800; color: #e74c3c; margin-bottom: 0.8rem; }
+        .btn-buy-card {
+            background: rgba(241,196,15,0.1);
+            color: #111;
+            border: 1px solid rgba(241,196,15,0.3);
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 800;
+            transition: 0.3s;
+            font-size: 0.9rem;
+            font-family: 'Inter', sans-serif;
+            width: 100%;
+        }
+        .btn-buy-card:hover { background: #f1c40f; color: #111; }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <a href="../index.html" class="logo"><i class="fas fa-tools"></i> Ferretería<span>Belén</span></a>
+        <div class="search-bar-container">
+            <select><option>Todas las categorías</option></select>
+            <input type="text" placeholder="¿Qué estás buscando?">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-actions">
+            <a href="Documento.html" class="action-btn"><i class="fas fa-book"></i> Manual</a>
+            <a href="../views/login.html" class="action-btn"><i class="fas fa-user-circle"></i> Mi Cuenta</a>
+            <a href="../views/carrito.html" class="action-btn"><i class="fas fa-shopping-cart"></i> Carrito</a>
+            <a href="../views/creador.html" class="action-btn"><i class="fas fa-code"></i> Creador</a>
+        </div>
+    </div>
+    <div class="header-nav">
+        <a href="ofertas.html"><i class="fas fa-tags"></i> Ofertas</a>
+        <a href="lo-nuevo.html"><i class="fas fa-star"></i> Lo Nuevo</a>
+        <a href="material-grueso.html">Fierros y Aceros</a>
+        <a href="pinturas.html">Pinturas</a>
+        <a href="herramientas.html">Herramientas</a>
+        <a href="plomeria.html">Plomería</a>
+        <a href="electricidad.html">Electricidad</a>
+        <a href="pinturas.html">Acabados</a>
+    </div>
+</header>
+
+<div class="page-hero" style="background: linear-gradient(135deg, #fffde7, #fff);">
+    <div style="max-width: 1300px; margin: 0 auto;">
+        <a href="../index.html" class="back-btn" style="color:#d4ac0d; border-color:rgba(241,196,15,0.4);"><i class="fas fa-arrow-left"></i> Volver a la tienda</a>
+        <h1><i class="fas fa-plug" style="color:#f1c40f;"></i> Electricidad</h1>
+        <p>Cables, tableros, disyuntores, focos LED, tomacorrientes y todo material eléctrico.</p>
+    </div>
+</div>
+
+<section class="products-section">
+    <div style="max-width: 1300px; margin: 0 auto;">
+        <div class="products-grid">
+
+            <div class="cat-product-card">
+                <div class="prod-img-box">
+                    <img src="../assets/img/cable.jpg" alt="Cable electrico">
+                </div>
+                <div class="cat-prod-name">Cable AWG 12 THHN (metro)</div>
+                <div class="cat-prod-desc">Conductor de cobre, aislamiento PVC, 600V.</div>
+                <div class="cat-prod-price">Bs. 4.20</div>
+                <button class="btn-buy-card"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+
+            <div class="cat-product-card">
+                <div class="prod-img-box">
+                    <img src="../assets/img/foco.webp" alt="foco led">
+                </div>
+                <div class="cat-prod-name">Foco LED 15W 6500K (unidad)</div>
+                <div class="cat-prod-desc">E27, 1350 lúmenes, vida útil 25.000h.</div>
+                <div class="cat-prod-price">Bs. 12.00</div>
+                <button class="btn-buy-card"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+
+            <div class="cat-product-card">
+                <div class="prod-img-box">
+                    <img src="../assets/img/interruptor.jpg" alt="interruptor">
+                </div>
+                <div class="cat-prod-name">Interruptor Simple BTICINO</div>
+                <div class="cat-prod-desc">Empotrable, 10A-250V, acabado blanco mate.</div>
+                <div class="cat-prod-price">Bs. 18.00</div>
+                <button class="btn-buy-card"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+
+            <div class="cat-product-card">
+                <div class="prod-img-box">
+                    <img src="../assets/img/disyuntor.jpg" alt="disyuntor">
+                </div>
+                <div class="cat-prod-name">Disyuntor Termomagnético 16A</div>
+                <div class="cat-prod-desc">Riel DIN, curva C, 1 polo, protección cortocircuitos.</div>
+                <div class="cat-prod-price">Bs. 35.00</div>
+                <button class="btn-buy-card"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+
+            <div class="cat-product-card">
+                <div class="prod-img-box">
+                    <img src="../assets/img/tomacorriente.jpg" alt="tomacorriente">
+                </div>
+                <div class="cat-prod-name">Tomacorriente Doble + Tierra</div>
+                <div class="cat-prod-desc">10A-250V, empotrable, protección infantil incluida.</div>
+                <div class="cat-prod-price">Bs. 22.00</div>
+                <button class="btn-buy-card"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+
+            <div class="cat-product-card">
+                <div class="prod-img-box">
+                    <img src="../assets/img/3m.jpg" alt="cinta aislante">
+                </div>
+                <div class="cat-prod-name">Cinta Aislante 3M 18mm x 18m</div>
+                <div class="cat-prod-desc">PVC autoadhesivo, resistente a la humedad.</div>
+                <div class="cat-prod-price">Bs. 8.50</div>
+                <button class="btn-buy-card"><i class="fas fa-cart-plus"></i> Comprar</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>¿Necesitas ayuda?</h4>
+            <ul>
+                <li><a href="#">Atención al cliente</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="../index.html#catalogo">Catálogo de Productos</a></li>
+                <li><a href="#" onclick="openModal('modalCotizacion')">Cotiza tu pedido</a></li>
+                <li><a href="#">Políticas de Devolución</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="#">Entrega a domicilio</a></li>
+                <li><a href="#">Asesoramiento técnico</a></li>
+                <li><a href="#">Ventas Corporativas / Por mayor</a></li>
+                <li><a href="#" onclick="openModal('modalCliente')">Portal Cliente Frecuente</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Somos Ferretería Belén</h4>
+            <ul>
+                <li><a href="#" onclick="openModal('modalTrabajo')">Trabaja con nosotros</a></li>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Nuestras Sucursales</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Ferretería Belén - Ingeniería de Sistemas | <a href="../index.html">Volver al inicio</a></p>
+    </div>
+</footer>
+
+<!-- MODALES SIMULADOS -->
+<!-- 1. Cotiza tu pedido -->
+<div class="modal-overlay" id="modalCotizacion">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-file-invoice-dollar"></i> Cotizar Pedido</h3>
+            <button class="modal-close" onclick="closeModal('modalCotizacion')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <form onsubmit="handleDemoSubmit(event, 'cotizacionSuccess')">
+                <div class="form-group">
+                    <label>Nombre y Apellidos (Nombre_cli / Apellidos_cli)</label>
+                    <input type="text" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label>Número de Contacto (Num_contacto_cli)</label>
+                    <input type="number" placeholder="Ej. 70012345" required>
+                </div>
+                <div class="form-group">
+                    <label>Productos y Cantidad (Nombre_prod / Cant_prod)</label>
+                    <textarea rows="3" placeholder="Describe los materiales y cantidades" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Generar Cotización</button>
+                <div id="cotizacionSuccess" class="success-msg"><i class="fas fa-check-circle"></i> ¡Cotización guardada! Contactaremos al cliente pronto.</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 2. Cliente Frecuente -->
+<div class="modal-overlay" id="modalCliente">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-id-card"></i> Portal Cliente Frecuente</h3>
+            <button class="modal-close" onclick="closeModal('modalCliente')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <form onsubmit="handleDemoSubmit(event, 'clienteSuccess')">
+                <div class="form-group">
+                    <label>Cédula de Identidad (CI_cli)</label>
+                    <input type="number" placeholder="Ej. 1234567" required>
+                </div>
+                <button type="submit" class="btn-submit" style="background: #1565C0;">Consultar Beneficios</button>
+                <div id="clienteSuccess" class="success-msg" style="color: #1565C0; background: #e3f2fd;">
+                    <i class="fas fa-star" style="color: #f39c12;"></i> ¡Hola! Tienes <strong>450 Puntos</strong> acumulados. Tienes un 15% de descuento disponible.
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 4. Trabaja con nosotros -->
+<div class="modal-overlay" id="modalTrabajo">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3><i class="fas fa-briefcase"></i> Postula a Ferretería Belén</h3>
+            <button class="modal-close" onclick="closeModal('modalTrabajo')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+            <form onsubmit="handleDemoSubmit(event, 'trabajoSuccess')">
+                <div class="form-group">
+                    <label>Cédula de Identidad (CI_emp)</label>
+                    <input type="number" placeholder="Ej. 1234567" required>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Nombres (Nombre_emp)</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ap. Paterno (Paterno_emp)</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ap. Materno (Materno_emp)</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Cargo a Postular (Cargo_emp)</label>
+                    <select required>
+                        <option value="">Selecciona un área</option>
+                        <option value="Ventas">Ventas</option>
+                        <option value="Almacen">Almacén</option>
+                        <option value="Administracion">Administración</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Teléfono (Num_contacto_emp)</label>
+                        <input type="number" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Correo (Correo_electronico_emp)</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Adjuntar Currículum (PDF)</label>
+                    <input type="file" accept=".pdf" required>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Postulación</button>
+                <div id="trabajoSuccess" class="success-msg"><i class="fas fa-check-circle"></i> ¡Postulación enviada a Recursos Humanos!</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal(id) { document.getElementById(id).classList.add('active'); }
+    function closeModal(id) {
+        document.getElementById(id).classList.remove('active');
+        var form = document.querySelector('#'+id+' form');
+        if(form) form.reset();
+        var successMsg = document.querySelector('#'+id+' .success-msg');
+        if(successMsg) successMsg.style.display = 'none';
+    }
+    function handleDemoSubmit(event, successMsgId) {
+        event.preventDefault();
+        var successEl = document.getElementById(successMsgId);
+        if(successEl) successEl.style.display = 'block';
+    }
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal-overlay')) { event.target.classList.remove('active'); }
+    }
+</script>
+<script>
+    document.querySelectorAll('.btn-buy-card').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.cat-product-card');
+            let name = "Producto Seleccionado";
+            let price = "0.00";
+            if (card) {
+                const nameEl = card.querySelector('.cat-prod-name');
+                const priceEl = card.querySelector('.cat-prod-price');
+                if (nameEl) name = nameEl.innerText;
+                if (priceEl) price = priceEl.innerText.replace('Bs.', '').trim();
+            }
+            let cart = JSON.parse(localStorage.getItem('ferreteria_cart')) || [];
+            cart.push({ name: name, price: parseFloat(price), qty: 1 });
+            localStorage.setItem('ferreteria_cart', JSON.stringify(cart));
+            window.location.href = '../views/carrito.html';
+        });
+    });
+</script>
+</body>
+</html>
